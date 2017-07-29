@@ -3,14 +3,16 @@ Things I have to learn to become a backend engineer using Java
 
 ## Frameworks
 #### 1. Spring Boot
-Spring in action
-Spring boot in action
+* Spring in action
+* Spring boot in action
 #### 2. Hibernate
 Hibernate in action
 
-##Build systems
+## Build systems
 
-##Profiles
+## Profiles
 
 ## Basic database
+
+## Basic security
 
