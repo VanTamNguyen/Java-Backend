@@ -6,7 +6,7 @@ Things I have to learn to become a backend engineer using Java
 * Spring in action
 * Spring boot in action
 #### 2. Hibernate
-Hibernate in action
+* Hibernate in action
 
 ## Build systems
 
