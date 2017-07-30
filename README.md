@@ -16,6 +16,8 @@ Things I have to learn to become a backend engineer using Java
 
 ## Basic security
 
+## REST service
+
 ## Test
 #### 1. Unit test
 #### 2. Integration test
