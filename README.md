@@ -29,6 +29,10 @@ nouns that describe the application
     * **State**: When working with REST, we are more concerned 
     with state of resources than with the actions we take against
     resources
+    * **Transfer**: REST involves transferring resource data,
+     in some representational form, from one application to another
+* Conclusion: REST is about transfer the state of resources, in whatever
+form is most appropriate, from a server to client (or vice versa)
 
 ## Test
 #### 1. Unit test
