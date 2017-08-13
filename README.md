@@ -34,7 +34,7 @@ nouns that describe the application
 * Conclusion: REST is about transfer the state of resources, in whatever
 form is most appropriate, from a server to client (or vice versa)
 
-## Test
+## [A relative link] (test.md)
 #### 1. Unit test
 #### 2. Integration test
 
