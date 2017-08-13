@@ -1,3 +1,6 @@
+# REST
+
+
 ### 1. Definition
 * The mistake that's often made when approaching REST is
  to think of it as *web services with URLs*
