@@ -19,3 +19,9 @@ nouns that describe the application
 form is most appropriate, from a server to client (or vice versa)
 
 ### 2. Six constraints
+* Uniform interface
+* Client - server
+* Stateless
+* Cacheable
+* Layered system
+* Code on demand
