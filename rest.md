@@ -21,6 +21,8 @@ form is most appropriate, from a server to client (or vice versa)
 ### 2. Six constraints
 * Uniform interface
 * Client - server
+    * Meaning client application and server application MUST be able to evolve separately without any dependency on each other (loose coupling). Client should know only resource URI and that's all.
+    * Servers and clients may also be replaced and developed independently, as long as the interface between them is not altered.
 * Stateless
 * Cacheable
 * Layered system
