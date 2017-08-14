@@ -1,5 +1,5 @@
 # Java backend
-Things I have to learn to become a backend engineer using Java
+Things I have to learn to become a Java backend engineer
 
 ### [Frameworks](frameworks.md)
 
