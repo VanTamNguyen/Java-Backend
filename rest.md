@@ -20,7 +20,7 @@ form is most appropriate, from a server to client (or vice versa)
 
 ### 2. Six constraints
 * **Uniform interface**
-    * Resource indentification in request
+    * Resource indentification in request
     * Resource manipulation through representation
     * Sefl-descriptive messages
     * Hypermedia as the engine of application state (HATEOAS)
