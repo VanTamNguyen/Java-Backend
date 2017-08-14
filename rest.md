@@ -28,5 +28,6 @@ form is most appropriate, from a server to client (or vice versa)
     * If client application need to be a stateful application for end user, where user logs in once and do other authorized operations thereafter, then each request from the client should contain all the information necessary to service the request – including authentication and authorization details.
     * No client context shall be stored on the server between context. Client should be reponsible for managing state of the application.
 * **Cacheable**
+    * In REST, caching be applied on resources when applicable and then these resources MUST declare themselves cacheable. Caching can be implemented on client or server side.
 * **Layered system**
 * **Code on demand**
