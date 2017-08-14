@@ -2,6 +2,7 @@
 
 ### Cookies-based vs token-based authentication
 #### Cookies-based authentication
+![Cookies-based](images/cookies-based-auth.jpeg)
 
 #### Token-based authentication
 
