@@ -20,6 +20,10 @@ form is most appropriate, from a server to client (or vice versa)
 
 ### 2. Six constraints
 * **Uniform interface**
+    * Resource indentification in request
+    * Resource manipulation through representation
+    * Sefl-descriptive messages
+    * Hypermedia as the engine of application state (HATEOAS)
 * **Client - server**
     * Meaning client application and server application MUST be able to evolve separately without any dependency on each other (loose coupling). Client should know only resource URI and that's all.
     * Servers and clients may also be replaced and developed independently, as long as the interface between them is not altered.
@@ -31,4 +35,4 @@ form is most appropriate, from a server to client (or vice versa)
     * In REST, caching be applied on resources when applicable and then these resources MUST declare themselves cacheable. Caching can be implemented on client or server side.
 * **Layered system**
     * A client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way.
-* **Code on demand**
+* **Code on demand (optional)**
