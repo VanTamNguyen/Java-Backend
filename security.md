@@ -25,7 +25,7 @@
     
     
 #### Advantages of token-based authentication
-* Because token-based authentication is **stateless** so it helps to scale the server easily. It also helps to decouple client and server. 
+* Because token-based authentication is **stateless** so it helps to *scale* the server easily. It also helps to *decouple* client and server. 
 
 ### JSON Web Token (JWT)
 
