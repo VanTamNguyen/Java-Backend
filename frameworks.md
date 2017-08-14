@@ -1,7 +1,7 @@
 # Frameworks
 
-### 1. Spring Boot
-* Spring in action
-* Spring boot in action
+### 1. Spring
+* [Spring in action](spring.md)
+* [Spring boot in action](spring_boot.md)
 ### 2. Hibernate
-* Hibernate in action
+* [Hibernate in action](hibernate.md)
