@@ -19,11 +19,14 @@ nouns that describe the application
 form is most appropriate, from a server to client (or vice versa)
 
 ### 2. Six constraints
-* Uniform interface
-* Client - server
+* **Uniform interface**
+* **Client - server**
     * Meaning client application and server application MUST be able to evolve separately without any dependency on each other (loose coupling). Client should know only resource URI and that's all.
     * Servers and clients may also be replaced and developed independently, as long as the interface between them is not altered.
-* Stateless
-* Cacheable
-* Layered system
-* Code on demand
+* **Stateless**
+    * Make all client-server interaction stateless. Meaning server will not store anything about latest http request client made. It will treat each and every requests as new. No session. No history.
+    * If client application need to be a stateful application for end user, where user logs in once and do other authorized operations thereafter, then each request from the client should contain all the information necessary to service the request – including authentication and authorization details.
+    * No client context shall be stored on the server between context. Client should be reponsible for managing state of the application.
+* **Cacheable**
+* **Layered system**
+* **Code on demand**
