@@ -18,4 +18,4 @@ nouns that describe the application
 * Conclusion: REST is about transfer the state of resources, in whatever
 form is most appropriate, from a server to client (or vice versa)
 
-### 2. Best practices
+### 2. Six constraints
