@@ -1,8 +1,8 @@
 # Security
 
 ### Cookies-based vs token-based authentication
+![cookie-token](images/cookie-token-auth.png)
 #### Cookies-based authentication
-![Cookies-based](images/cookies-based-auth.jpeg)
 
 #### Token-based authentication
 
