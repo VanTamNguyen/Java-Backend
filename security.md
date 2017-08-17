@@ -30,6 +30,15 @@
 ### JSON Web Token (JWT)
 JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/html/rfc7519) method for representing claims securely between two parties. JWT contains 3 pieces separated by dot character (*xxx.yyy.zzz*). They are header, payload and signature respectively. JWT can be signed using a secret (**HMAC** algorithm) or a pair of private/public key (**RSA**). Because of that the JWT can be verified and trusted between parties.
 * **Header**
+    * Consists 2 parts: type of token (which is JWT) and signature algorithm
+    * Example
+    ``` JSON
+    {
+        "alg": "HS256",
+        "typ": "JWT"
+    }
+    ```
+        
 * **Payload**
 * **Signature**
 
