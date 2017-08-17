@@ -51,6 +51,14 @@ JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/ht
     ```
     
 * **Signature**
+    * Sign on a combination of header and payload
+    * Example
+    ``` java
+    HMACSHA256(
+  base64UrlEncode(header) + "." +
+  base64UrlEncode(payload),
+  secret)
+    ````
 
 
 ### Spring security
