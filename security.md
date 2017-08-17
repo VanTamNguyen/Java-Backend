@@ -40,12 +40,12 @@ JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/ht
     ```
         
 * **Payload**
-    * Contains claims (statement about an entity typically an user or anything we want to transfer between parties)
+    * Contains claims (statement about an entity typically an user or anything we want to transfer between parties)
     * Example
     ``` JSON
     {
         "username": "Tam-CO",
-        "user_id": "1234567890"
+        "user_id": "1234567890",
         "super_dev": true
     }
     ```
