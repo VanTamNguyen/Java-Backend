@@ -28,7 +28,7 @@
 * Because token-based authentication is **stateless** so it helps to *scale* the server easily. It also helps to *decouple* client and server. 
 
 ### JSON Web Token (JWT)
-JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/html/rfc7519) method for representing claims securely between two parties. JWT contains 3 pieces separated by dot character. The format is like this: *xxx.yyy.zzz*
+JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/html/rfc7519) method for representing claims securely between two parties. JWT contains 3 pieces separated by dot character (*xxx.yyy.zzz*). They are header, payload and signature respectively. JWT can be signed using a secret (**HMAC** algorithm) or a pair of private/public key (**RSA**). Because of that the JWT can be verified and trusted between parties.
 * **Header**
 * **Payload**
 * **Signature**
