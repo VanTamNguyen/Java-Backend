@@ -62,3 +62,17 @@ JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/ht
 
 
 ### Spring security
+
+### Single sign on (SSO)
+* Login one time access to serveral services
+* Centralize identity (known as *federated identity*). Federated identity systems handle
+serveral concerns:
+    * Authentication
+    * Authorization
+    * User attributes exchange
+    * User management
+* 
+
+### OAuth2
+
+### OpenID connect
