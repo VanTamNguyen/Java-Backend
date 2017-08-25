@@ -67,11 +67,10 @@ JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/ht
 * Login one time access to serveral services
 * Centralize identity (known as *federated identity*). Federated identity systems handle
 serveral concerns:
-    * Authentication
-    * Authorization
-    * User attributes exchange
-    * User management
-* 
+    * **Authentication** deals with validating user credentials and establishing the identity of the user
+    * **Authorization** is related to access restrictions (e.g is the user **allowed** to access resource X?)
+    * **User attributes exchange** deals with data sharing across different user management systems
+    * **User management** is related to administration (creation, deletion, update) of user accounts
 
 ### OAuth2
 
