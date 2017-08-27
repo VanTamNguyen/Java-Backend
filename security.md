@@ -75,3 +75,6 @@ serveral concerns:
 ### OAuth2
 
 ### OpenID connect
+* Authorisation code flow
+* Implicit flow
+* Hybrid flow
