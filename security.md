@@ -75,7 +75,7 @@ serveral concerns:
 ### OAuth2
 
 ### OpenID connect
-* Authorisation code flow
+* [Authorisation code flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
     ``` java
     1. Client prepares an Authentication Request containing the desired request parameters.
     2. Client sends the request to the Authorization Server.
@@ -86,5 +86,5 @@ serveral concerns:
     7. Client receives a response that contains an ID Token and Access Token in the response body.
     8. Client validates the ID token and retrieves the End-User's Subject Identifier.
     ```
-* Implicit flow
+* [Implicit flow](https://openid.net/specs/openid-connect-core-1_0.html#ImplicitFlowAuth)
 * Hybrid flow
