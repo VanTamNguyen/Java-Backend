@@ -95,4 +95,4 @@ serveral concerns:
     5. Authorization Server sends the End-User back to the Client with an ID Token and, if requested, an Access Token.
     6. Client validates the ID token and retrieves the End-User's Subject Identifier.
     ```
-* Hybrid flow
+* [Hybrid flow](https://openid.net/specs/openid-connect-core-1_0.html#HybridFlowAuth)
