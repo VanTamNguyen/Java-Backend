@@ -75,6 +75,18 @@ serveral concerns:
 ### OAuth2
 
 ### OpenID connect
+#### Overview
+#### Concepts
+* Endpoints
+* Claims
+* ID Token
+* Some request parameters
+    * **state**
+    * **scope**
+    * **client_id**
+    * **response_type**
+    * **redirect_uri**
+#### Flows
 * [Authorisation code flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
     ``` java
     1. Client prepares an Authentication Request containing the desired request parameters.
