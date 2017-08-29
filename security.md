@@ -87,4 +87,12 @@ serveral concerns:
     8. Client validates the ID token and retrieves the End-User's Subject Identifier.
     ```
 * [Implicit flow](https://openid.net/specs/openid-connect-core-1_0.html#ImplicitFlowAuth)
+    ``` java
+    1. Client prepares an Authentication Request containing the desired request parameters.
+    2. Client sends the request to the Authorization Server.
+    3. Authorization Server Authenticates the End-User.
+    4. Authorization Server obtains End-User Consent/Authorization.
+    5. Authorization Server sends the End-User back to the Client with an ID Token and, if requested, an Access Token.
+    6. Client validates the ID token and retrieves the End-User's Subject Identifier.
+    ```
 * Hybrid flow
