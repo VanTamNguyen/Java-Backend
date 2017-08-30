@@ -113,7 +113,10 @@ serveral concerns:
     [Reference 2](https://www.youtube.com/watch?v=6DxRTJN1Ffo)
 #### 6.2 Concepts
 * ID Token is a JWT contains Claims
-* Endpoints
+* Endpoints are the interfaces which Client and End-User interact with OP. They are
+    * Authorization Endpoint
+    * Token Endpoint
+    * UserInfo Endpoint
 * Claims
 * Some request parameters
     * **state**
