@@ -76,6 +76,27 @@ serveral concerns:
 
 ### OpenID connect
 #### Overview
+``` java
++--------+                                   +--------+
+|        |                                   |        |
+|        |---------(1) AuthN Request-------->|        |
+|        |                                   |        |
+|        |  +--------+                       |        |
+|        |  |        |                       |        |
+|        |  |  End-  |<--(2) AuthN & AuthZ-->|        |
+|        |  |  User  |                       |        |
+|   RP   |  |        |                       |   OP   |
+|        |  +--------+                       |        |
+|        |                                   |        |
+|        |<--------(3) AuthN Response--------|        |
+|        |                                   |        |
+|        |---------(4) UserInfo Request----->|        |
+|        |                                   |        |
+|        |<--------(5) UserInfo Response-----|        |
+|        |                                   |        |
++--------+                                   +--------+
+
+```
 #### Concepts
 * Endpoints
 * Claims
