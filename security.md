@@ -80,7 +80,15 @@ serveral concerns:
 #### 6.1 Overview
 * OpenID Connect = OAuth2 + ID Token (JWT)
 * OpenID Connect is a simple identity layer on top of the OAuth2 protocol. It enables Clients to verify the identity of End-User based on the authentication performed by an Authorization Server, as well as to obtain basic profile information about the End-User in an interoperable and REST-like manner.
-* OpenID Connect core functionalities: authentication built on top of OAuth2 + the use of Claims to communicate information about the End-User. 
+* OpenID Connect core functionalities: authentication built on top of OAuth2 + the use of Claims to communicate information about the End-User.
+* The OpenID Connect protocol, in abstract, follows the following steps
+    ``` java
+    1. The RP (Client) sends a request to the OpenID Provider (OP).
+    2. The OP authenticates the End-User and obtains authorization.
+    3. The OP responds with an ID Token and usually an Access Token.
+    4. The RP can send a request with the Access Token to the UserInfo Endpoint.
+    5. The UserInfo Endpoint returns Claims about the End-User.
+    ```
     ``` java
     +--------+                                   +--------+
     |        |                                   |        |
@@ -101,8 +109,8 @@ serveral concerns:
     |        |                                   |        |
     +--------+                                   +--------+
     ```
-[Reference 1](https://openid.net/specs/openid-connect-core-1_0.html)
-[Reference 2](https://www.youtube.com/watch?v=6DxRTJN1Ffo)
+    [Reference 1](https://openid.net/specs/openid-connect-core-1_0.html)
+    [Reference 2](https://www.youtube.com/watch?v=6DxRTJN1Ffo)
 #### 6.2 Concepts
 * ID Token is a JWT contains Claims
 * Endpoints
