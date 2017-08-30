@@ -1,5 +1,7 @@
 # Security
 
+### 0. Authentication and Authorization
+
 ### 1. Cookie-based vs token-based authentication
 ![cookie-token](images/cookie-token-auth.png)
 
@@ -74,8 +76,11 @@ serveral concerns:
 
 ### 5. OAuth2
 
-### 6. OpenID connect
+### 6. OpenID Connect
 #### 6.1 Overview
+* OpenID Connect = OAuth2 + ID Token (JWT)
+* OpenID Connect is a simple identity layer on top of the OAuth2 protocol. It enables Clients to verify the identity of End-User based on the authentication performed by an Authorization Server, as well as to obtain basic profile information about the End-User in an interoperable and REST-like manner.
+* OpenID Connect core functionalities: authentication built on top of OAuth2 + the use of Claims to communicate information about the End-User. 
 ``` java
 +--------+                                   +--------+
 |        |                                   |        |
@@ -95,12 +100,13 @@ serveral concerns:
 |        |<--------(5) UserInfo Response-----|        |
 |        |                                   |        |
 +--------+                                   +--------+
-
 ```
+[Reference 1](https://openid.net/specs/openid-connect-core-1_0.html)
+[Reference 2](https://www.youtube.com/watch?v=6DxRTJN1Ffo)
 #### 6.2 Concepts
+* ID Token is a JWT contains Claims
 * Endpoints
 * Claims
-* ID Token
 * Some request parameters
     * **state**
     * **scope**
