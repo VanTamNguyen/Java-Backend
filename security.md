@@ -129,3 +129,13 @@ serveral concerns:
     6. Client validates the ID token and retrieves the End-User's Subject Identifier.
     ```
 * [Hybrid flow](https://openid.net/specs/openid-connect-core-1_0.html#HybridFlowAuth)
+    ``` java
+    1. Client prepares an Authentication Request containing the desired request parameters.
+    2. Client sends the request to the Authorization Server.
+    3. Authorization Server Authenticates the End-User.
+    4. Authorization Server obtains End-User Consent/Authorization.
+    5. Authorization Server sends the End-User back to the Client with an Authorization Code and, depending on the Response Type, one or more additional parameters.
+    6. Client requests a response using the Authorization Code at the Token Endpoint.
+    7. Client receives a response that contains an ID Token and Access Token in the response body.
+    8. Client validates the ID Token and retrieves the End-User's Subject Identifier.
+    ```
