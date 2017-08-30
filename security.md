@@ -1,9 +1,9 @@
 # Security
 
-### Cookie-based vs token-based authentication
+### 1. Cookie-based vs token-based authentication
 ![cookie-token](images/cookie-token-auth.png)
 
-#### Cookie-based authentication
+#### 1.1 Cookie-based authentication
 * Cookie-based authentication is **stateful**. Meaning that an authentication record(session) must be kept on both client side and server side
 * Flow of cookie-based auth
     * User posts credentials to server
@@ -13,7 +13,7 @@
     * Once user logouts the session will be destroyed on both side, client and server
 
 
-#### Token-based authentication
+#### 1.2 Token-based authentication
 * Token-based authentication is **stateless**. Meaning that server does not keep a record of which users logged in or which tokens issued.
 * Flow of token-based authentication
     * User posts credentials to server
@@ -24,10 +24,10 @@
     * Once the user logouts, the token is destroyed on client side, no interaction with server is necessary
     
     
-#### Advantages of token-based authentication
+#### 1.3 Advantages of token-based authentication
 * Because token-based authentication is **stateless** so it helps to *scale* the server easily. It also helps to *decouple* client and server. 
 
-### JSON Web Token (JWT)
+### 2. JSON Web Token (JWT)
 JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/html/rfc7519) method for representing claims securely between two parties. JWT contains 3 pieces separated by dot character (*xxx.yyy.zzz*). They are header, payload and signature respectively. JWT can be signed using a secret (**HMAC** algorithm) or a pair of private/public key (**RSA**). Because of that the JWT can be verified and trusted between parties.
 * **Header**
     * Consists 2 parts: type of token (which is JWT) and signature algorithm
@@ -61,9 +61,9 @@ JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/ht
     ````
 
 
-### Spring security
+### 3. Spring security
 
-### Single sign on (SSO)
+### 4. Single sign on (SSO)
 * Login one time access to serveral services
 * Centralize identity (known as *federated identity*). Federated identity systems handle
 serveral concerns:
@@ -72,10 +72,10 @@ serveral concerns:
     * **User attributes exchange** deals with data sharing across different user management systems
     * **User management** is related to administration (creation, deletion, update) of user accounts
 
-### OAuth2
+### 5. OAuth2
 
-### OpenID connect
-#### Overview
+### 6. OpenID connect
+#### 6.1 Overview
 ``` java
 +--------+                                   +--------+
 |        |                                   |        |
@@ -97,7 +97,7 @@ serveral concerns:
 +--------+                                   +--------+
 
 ```
-#### Concepts
+#### 6.2 Concepts
 * Endpoints
 * Claims
 * ID Token
@@ -107,7 +107,7 @@ serveral concerns:
     * **client_id**
     * **response_type**
     * **redirect_uri**
-#### Flows
+#### 6.3 Flows
 * [Authorisation code flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
     ``` java
     1. Client prepares an Authentication Request containing the desired request parameters.
