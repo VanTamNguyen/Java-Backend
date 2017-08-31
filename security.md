@@ -1,6 +1,7 @@
 # Security
 
-### 0. Authentication and Authorization
+### 0. Asymmetric (public key) encryption and digital signatures
+First, note that, here I just provide an abstraction about public key encryption to understand something (concepts) below. To fully understand this topic I will study *cryptography* in another github repository (course).
 
 ### 1. Cookie-based vs token-based authentication
 ![cookie-token](images/cookie-token-auth.png)
