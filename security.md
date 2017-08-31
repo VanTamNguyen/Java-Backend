@@ -113,11 +113,11 @@ serveral concerns:
     [Reference 2](https://www.youtube.com/watch?v=6DxRTJN1Ffo)
 #### 6.2 Concepts
 * ID Token is a JWT contains Claims
-* Endpoints are the interfaces which Client and End-User interact with OP. They are
+* Endpoints are the interfaces which Client and End-User interact with OP. They are:
     * Authorization Endpoint
     * Token Endpoint
     * UserInfo Endpoint
-* Claims
+* Claims are *statements about an entity typically an user or anything we want to transfer between parties*. Claims include: *sub, name, given_name, family_name, middle_name, preferred_username, nickname, profile, picture, website, email, blah blah blah*
 * Some request parameters
     * **state**
     * **scope**
