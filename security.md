@@ -14,7 +14,8 @@
 ![public-key-encryption](images/public_key_cryptography.jpg)
 
 #### 0.2 Digital signatures
-
+* Sign with a secret
+* Sign with private key
 
 ### 1. Cookie-based vs token-based authentication
 
