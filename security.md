@@ -10,12 +10,13 @@
 
 #### 0.1 Public key encryption
 * Let say that Alice wants to send some messages to Bob and she does not want anybody can read them except Bob. Bob will generate a *pair of public/private key*. Bob gives *public key* to Alice and keep *private key* secret. Now Alice is going to use *public key* to encrypt the message and send it to Bob. Bob will use *private key* to decrypt Alice's message. And only Bob can do that.
+* Look at the image below for more visual
+![public-key-encryption](images/public_key_cryptography.jpg)
 
 #### 0.2 Digital signatures
 
 
 ### 1. Cookie-based vs token-based authentication
-![cookie-token](images/cookie-token-auth.png)
 
 #### 1.1 Cookie-based authentication
 * Cookie-based authentication is **stateful**. Meaning that an authentication record(session) must be kept on both client side and server side
