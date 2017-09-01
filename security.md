@@ -14,6 +14,8 @@
 ![public-key-encryption](images/public_key_cryptography.jpg)
 
 #### 0.2 Digital signature
+* Let say that, Bob wants to send message to Alice and Alice wants to make sure that the message is Bob's. Before sending Bob will *sign* the message using *private key*. Alice receives the message and uses the *public key* to verify that Bob created this message. Or anyone has *public key* can verify if Bob created message.
+
 #### 0.3 Message authentication code (MAC)
 * MAC algorithm is a symmetric key cryptographic technique to provide message authentication. The sender and receiver share a private symmetric key called K.
 * The image below describes how MAC works
