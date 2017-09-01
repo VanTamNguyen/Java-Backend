@@ -13,9 +13,11 @@
 * Look at the image below for more visual
 ![public-key-encryption](images/public_key_cryptography.jpg)
 
-#### 0.2 Digital signatures
-* Sign with a secret
-* Sign with private key
+#### 0.2 Digital signature
+#### 0.3 Message authentication code (MAC)
+* MAC algorithm is a symmetric key cryptographic technique to provide message authentication. The sender and receiver share a private symmetric key called K.
+* The image below describes how MAC works
+![MAC](images/MAC.png)
 
 ### 1. Cookie-based vs token-based authentication
 
