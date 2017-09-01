@@ -1,12 +1,12 @@
 # Security
 
 ### 0. Asymmetric (public key) encryption and digital signatures
-    First, note that, here I just provide an abstraction about public key encryption to understand something (concepts)
-    below (like JSON Web Token). To fully understand this topic I will study *cryptography* in another github repository
-    (course).
+    First, note that, here I just provide an abstraction about public key encryption to understand
+    something (concepts) below (like JSON Web Token). To fully understand this topic I will 
+    study *cryptography* in another github repository(course).
     
-    Asymmetric encryption is based on a pair of public/private key. Unlike symmetric encrytion there is only one key and
-    both sides must keep it secret.
+    Asymmetric encryption is based on a pair of public/private key. Unlike symmetric encrytion 
+    there is only one key and both sides must keep it secret.
 
 #### 0.1 Public key encryption
 * Let say that Alice wants to send some messages to Bob and she does not want anybody can read them except Bob. Bob will generate a *pair of public/private key*. Bob gives *public key* to Alice and keep *private key* secret. Now Alice is going to use *public key* to encrypt the message and send it to Bob. Bob will use *private key* to decrypt Alice's message. And only Bob can do that.
