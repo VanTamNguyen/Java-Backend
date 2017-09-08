@@ -25,3 +25,8 @@ Please see [reference](https://github.com/VanTamNguyen/Java-Backend/blob/master/
 
 
 #### 2.2 Create secure connection (encrypt incoming and outgoing data)
+* 1. As mentioned above, when user enters facebook.com to browser, FB server sends its public key to browser.
+* 2. After validating the certificate of website, browser will generate a secret key (symmetric key) (let call it **session key**) and makes 2 copies of it.
+* 3. Browser will use facebook's public key to encrypt the **session key** and sends it to facebook.
+* 4. Facebook will use its private key to decrypt the message of browser from step iii and get the session key
+* 5. Now both sides (FB and browser) have the **session key**. From now they will use session key to encrypt data before sending and decrypt data after receiving.
