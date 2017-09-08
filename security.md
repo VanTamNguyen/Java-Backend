@@ -21,7 +21,7 @@
 * The image below describes how MAC works
 ![MAC](images/MAC.png)
 
-#### 1.4 SSL and HTTPS
+#### 1.4 HTTPS
 It's vital to understand what HTTPS is and how it works. So I will present it in a separate file. [Go to https](ssl_https.md).
 
 ### 2. Cookie-based vs token-based authentication
