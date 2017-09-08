@@ -18,5 +18,10 @@ Please see [reference](https://github.com/VanTamNguyen/Java-Backend/blob/master/
 #### 1.5 X509 Certificate
 
 ### 2. HTTPS handshake
-#### 2.1 Browser validates certificate of website
+#### 2.1 Browser validates certificate of a website
+* 1. User enters URL facebook.com to browser, FB server gives browser the certificate of the website (which was signed by GeoTrust for example) and FB's public key.
+* 2. Now browser has to verify if the certificate of website was signed bt GeoTrust or not. As browsers come with a list of public keys of major CAs, it will pick GeoTrust's public key to verify the certificate FB gave.
+* 3. If the verification succeeds the browser proceeds next step else it stops.
+
+
 #### 2.2 Create secure connection (encrypt incoming and outgoing data)
