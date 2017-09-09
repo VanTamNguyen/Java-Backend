@@ -11,7 +11,7 @@ They are global trusted company like GoDaddy, VeriSign, GeoTrust... who provide 
 Please see [reference](https://github.com/VanTamNguyen/Java-Backend/blob/master/security.md#0-asymmetric-public-key-encryption-and-digital-signatures)
 
 #### 1.4 How a website get a certificate?
-* First website owner generate pair of public/private key. He keep the private key secret. He give a *Certificate Signing Request (CSR)* and his public key to CA.
+* First website owner generate pair of public/private key. He keeps the private key secret. He gives a *Certificate Signing Request (CSR)* and his public key to CA.
 * CA creates personal certificate based on CSR include domain name, owner name, expiration date etc and also add **CA's digital signature** to certificate. Then CA uses website owner's public key to encrypt the certificate and send back to website owner.
 * Website owner receives the encrypted certificate and uses his private key to decrypt certificate. Finally he installs that certificate on website.
 
