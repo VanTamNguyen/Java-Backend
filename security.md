@@ -96,6 +96,12 @@ serveral concerns:
     * **User management** is related to administration (creation, deletion, update) of user accounts
 
 ### 6. OAuth2
+#### 6.1 Roles
+* **Resource owner** is an entity capable of granting access to a protected resource. When resource owner is a person, it is referred as an end-user.
+* **Resource server** is the server hosting protected resources, capable of accepting and responding protected resource requests using access token.
+* **Client** is the third party. It is an application attempting to access resource owner's protected resource. It needs to get permission from resource owner before accessing protected resource.
+* **Authorization server** is the server issuing access token to client after authenticating resource owner and obtaining authorization. 
+
 
 ### 7. OpenID Connect
 #### 7.1 Overview
