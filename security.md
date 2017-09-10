@@ -102,6 +102,25 @@ serveral concerns:
 * **Client** is the third party. It is an application attempting to access resource owner's protected resource. It needs to get permission from resource owner before accessing protected resource.
 * **Authorization server** is the server issuing access token to client after authenticating resource owner and obtaining authorization. 
 
+#### 6.2 Protocol Flow
+     +--------+                               +---------------+
+     |        |--(A)- Authorization Request ->|   Resource    |
+     |        |                               |     Owner     |
+     |        |<-(B)-- Authorization Grant ---|               |
+     |        |                               +---------------+
+     |        |
+     |        |                               +---------------+
+     |        |--(C)-- Authorization Grant -->| Authorization |
+     | Client |                               |     Server    |
+     |        |<-(D)----- Access Token -------|               |
+     |        |                               +---------------+
+     |        |
+     |        |                               +---------------+
+     |        |--(E)----- Access Token ------>|    Resource   |
+     |        |                               |     Server    |
+     |        |<-(F)--- Protected Resource ---|               |
+     +--------+                               +---------------+
+
 
 ### 7. OpenID Connect
 #### 7.1 Overview
