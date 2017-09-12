@@ -126,7 +126,7 @@ Before you can begin OAuth process, you must first register an application with 
 * Client ID and Client Secret
 After registering your app, you will receive a Client ID and a Client Secret. Client ID can be public and Client Secret must keep confidential. If your deployed app cannot keep the secret confidential, such as single page Javascript app or mobile native app, the Client Secret is not used.
 
-#### 6.4 
+#### 6.4 Authorization
 
 ### 7. OpenID Connect
 #### 7.1 Overview
