@@ -166,7 +166,7 @@ serveral concerns:
 * Claims are *statements about an entity typically an user or anything we want to transfer between parties*. Claims include: *sub, name, given_name, family_name, middle_name, preferred_username, nickname, profile, picture, website, email, blah blah blah*
 #### 7.3 Flows
 * [Authorisation code flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
-* response_type == code
+    *response_type* == *code*
     ``` java
     1. Client prepares an Authentication Request containing the desired request parameters.
     2. Client sends the request to the Authorization Server.
@@ -178,7 +178,7 @@ serveral concerns:
     8. Client validates the ID token and retrieves the End-User's Subject Identifier.
     ```
 * [Implicit flow](https://openid.net/specs/openid-connect-core-1_0.html#ImplicitFlowAuth)
-* response_type == token or id_token or both
+    *response_type* == *token* or *id_token* or both
     ``` java
     1. Client prepares an Authentication Request containing the desired request parameters.
     2. Client sends the request to the Authorization Server.
