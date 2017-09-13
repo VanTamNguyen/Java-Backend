@@ -136,6 +136,15 @@ OAuth2 provides serveral "grant type" for different use cases. They are:
 Authorization Code is the most common grant type (flow) so below I will present the authorization flow of an web server app.
 
 #### 6.5 Web Server Apps
+Web Server Apps run on a server where the source code of application is not available to public. So that you can use client secret on the application. And below I present the flow of authorization code:
+
+* 1. Authorization
+Create a "Log In" link that send user to Authorization Endpoint of Authorization Server. The link is like below
+```
+https://oauth2server.com/auth?response_type=code&
+  client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&scope=photos&state=1234zyx
+```
+* 2. Token exchange
 
 ### 7. OpenID Connect
 #### 7.1 Overview
