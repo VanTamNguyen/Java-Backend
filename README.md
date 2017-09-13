@@ -15,4 +15,4 @@ Things I learn to become a Java backend engineer
 
 ### [Web server](webserver.md)
 
-### [Servlets](servlet.md)
+### [Servlets](servlets.md)
