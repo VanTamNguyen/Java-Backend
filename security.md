@@ -139,7 +139,7 @@ Authorization Code is the most common grant type (flow) so below I will present 
 Web Server Apps run on a server where the source code of application is not available to public. So that you can use client secret on the application. And below I present the flow of authorization code:
 
 * **Authorization**
-<br/>Create a "Log In" link that send user to Authorization Endpoint of Authorization Server. The link is like below
+    Create a "Log In" link that send user to Authorization Endpoint of Authorization Server. The link is like below
     ``` java
     https://oauth2server.com/auth?response_type=code&
             client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&scope=photos&state=1234zyx
@@ -159,10 +159,33 @@ Web Server Apps run on a server where the source code of application is not avai
     Where:
     * *code*: The Authorization Server returns the auth code
     * *state*: The state we passed to Authorization Server before, now it send it back to client app
+    
     Now we (client app) received auth code from Authorization Server and we should verify the state.
 
 * **Token exchange**
-
+    Now we (client app) received auth code from Authorization Server. So we will continue to get access token from it by sending user to Token Endpoint of Authorization Server via this link:
+    ```java
+    POST https://api.oauth2server.com/token
+                 grant_type=authorization_code&
+                 code=AUTH_CODE_HERE&
+                 redirect_uri=REDIRECT_URI&
+                 client_id=CLIENT_ID&
+                 client_secret=CLIENT_SECRET
+    ```
+    Where:
+    * *grant_type=authorization_code* indicates that we are using authorization code flow
+    * *code* is the auth code the Authorization Server gave us before
+    * *redirect_uri* where (on client app) we want user to go after this flow finishes
+    * *client_id* and *client_secret* the information of client app we registered with the service before
+    
+    Finally the Authorization Server will give us the access token and we can use this access token to access protected resources on Resource Server:
+    ``` java
+    {
+        "access_token":"some_access_token",
+        "expires_in": 3600
+    }
+    ```
+    
 ### 7. OpenID Connect
 #### 7.1 Overview
 * OpenID Connect = OAuth2 + ID Token (JWT)
