@@ -127,6 +127,15 @@ Before you can begin OAuth process, you must first register an application with 
 After registering your app, you will receive a Client ID and a Client Secret. Client ID can be public and Client Secret must keep confidential. If your deployed app cannot keep the secret confidential, such as single page Javascript app or mobile native app, the Client Secret is not used.
 
 #### 6.4 Authorization
+OAuth2 provides serveral "grant type" for different use cases. They are:
+* **Authorization Code** for apps running on Web Server, Browser based and Mobile native app
+* **Password** for app log in using username and password
+* **Client credentials** for client access
+* **Implicit** was previously recommended for clients without a secret, but has been superceded by using the Authorization Code grant with no secret
+
+Authorization Code is the most common grant type (flow) so below I will present the authorization flow of an web server app.
+
+#### 6.5 Web Server Apps
 
 ### 7. OpenID Connect
 #### 7.1 Overview
@@ -173,7 +182,7 @@ After registering your app, you will receive a Client ID and a Client Secret. Cl
 #### 7.3 Flows
 * [Authorisation code flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
     ```
-    *response_type* == *code*
+    response_type == code
     ```
     ``` java
     1. Client prepares an Authentication Request containing the desired request parameters.
@@ -187,7 +196,7 @@ After registering your app, you will receive a Client ID and a Client Secret. Cl
     ```
 * [Implicit flow](https://openid.net/specs/openid-connect-core-1_0.html#ImplicitFlowAuth)
     ```
-    *response_type* == *token* or *id_token* or both
+    response_type == token or id_token or both
     ```
     ``` java
     1. Client prepares an Authentication Request containing the desired request parameters.
