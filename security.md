@@ -153,7 +153,7 @@ Web Server Apps run on a server where the source code of application is not avai
 
     The Authorization Server will ask the user to log in (authentication) and after that Authorization Server will ask user
     consent. If user allows the Authorization Server will redirect user to the client site (client app) by the link below:
-    ```
+    ``` java
     https://oauth2client.com/cb?code=AUTH_CODE_HERE&state=1234zyx
     ```
     Where:
