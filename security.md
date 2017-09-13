@@ -139,10 +139,10 @@ Authorization Code is the most common grant type (flow) so below I will present 
 Web Server Apps run on a server where the source code of application is not available to public. So that you can use client secret on the application. And below I present the flow of authorization code:
 
 * **Authorization**
-Create a "Log In" link that send user to Authorization Endpoint of Authorization Server. The link is like below
+<br/>Create a "Log In" link that send user to Authorization Endpoint of Authorization Server. The link is like below
     ``` java
     https://oauth2server.com/auth?response_type=code&
-      client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&scope=photos&state=1234zyx
+            client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&scope=photos&state=1234zyx
     ```
     Where:
     * *response_type=code* indicates that we are using authorization code flow, asking authorization server give us (client app) the authorization code.
