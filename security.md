@@ -24,33 +24,7 @@
 #### 1.4 HTTPS
 It's vital to understand what HTTPS is and how it works. So I will present it in a separate file. [Go to https](https.md).
 
-### 2. Cookie-based vs token-based authentication
-
-#### 2.1 Cookie-based authentication
-* Cookie-based authentication is **stateful**. Meaning that an authentication record(session) must be kept on both client side and server side
-* Flow of cookie-based auth
-    * User posts credentials to server
-    * Server verify credentials and create session which is stored on db
-    * A cookie with the **session ID** is placed in user browser
-    * On subsequence requests, user must post session ID to server and it will be verified against db
-    * Once user logouts the session will be destroyed on both side, client and server
-
-
-#### 2.2 Token-based authentication
-* Token-based authentication is **stateless**. Meaning that server does not keep a record of which users logged in or which tokens issued.
-* Flow of token-based authentication
-    * User posts credentials to server
-    * Server verifies credentials are correct and return a *signed token*
-    * This token is stored only on client side
-    * On subsequence requests, user must include this token to *Authorization* header
-    * Server decode token and verifies if it **signed** this token and then process the request
-    * Once the user logouts, the token is destroyed on client side, no interaction with server is necessary
-    
-    
-#### 2.3 Advantages of token-based authentication
-* Because token-based authentication is **stateless** so it helps to *scale* the server easily. It also helps to *decouple* client and server. 
-
-### 3. JSON Web Token (JWT)
+### 2. JSON Web Token (JWT)
 JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/html/rfc7519) method for representing claims securely between two parties. JWT contains 3 pieces separated by dot character (*xxx.yyy.zzz*). They are header, payload and signature respectively. JWT can be signed using a secret (**HMAC** algorithm) or a pair of private/public key (**RSA**). Because of that the JWT can be verified and trusted between parties.
 * **Header**
     * Consists 2 parts: type of token (which is JWT) and signature algorithm
@@ -78,10 +52,37 @@ JSON Web Token is a open, industry standard [RFC 7519](https://tools.ietf.org/ht
     * Example
     ``` java
     HMACSHA256(
-  base64UrlEncode(header) + "." +
-  base64UrlEncode(payload),
-  secret)
-    ````
+        base64UrlEncode(header) + "." + base64UrlEncode(payload),
+        secret
+        )
+    ```
+
+### 3. Cookie-based vs token-based authentication
+
+#### 3.1 Cookie-based authentication
+* Cookie-based authentication is **stateful**. Meaning that an authentication record(session) must be kept on both client side and server side
+* Flow of cookie-based auth
+    * User posts credentials to server
+    * Server verify credentials and create session which is stored on db
+    * A cookie with the **session ID** is placed in user browser
+    * On subsequence requests, user must post session ID to server and it will be verified against db
+    * Once user logouts the session will be destroyed on both side, client and server
+
+
+#### 3.2 Token-based authentication
+* Token-based authentication is **stateless**. Meaning that server does not keep a record of which users logged in or which tokens issued.
+* Flow of token-based authentication
+    * User posts credentials to server
+    * Server verifies credentials are correct and return a *signed token*
+    * This token is stored only on client side
+    * On subsequence requests, user must include this token to *Authorization* header
+    * Server decode token and verifies if it **signed** this token and then process the request
+    * Once the user logouts, the token is destroyed on client side, no interaction with server is necessary
+    
+    
+#### 3.3 Advantages of token-based authentication
+* Because token-based authentication is **stateless** so it helps to *scale* the server easily. It also helps to *decouple* client and server. 
+
 
 
 ### 4. Spring security
