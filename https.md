@@ -32,4 +32,4 @@ Please see [reference](https://github.com/VanTamNguyen/Java-Backend/blob/master/
 * 5. Now both sides (FB and browser) have the **session key**. From now they will use session key to encrypt data before sending and decrypt data after receiving.
 
 ### 3. References
-* [Long but very very good explaination](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
+* [[Long but very very good explaination] MIT OpenCourseWare](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
