@@ -30,3 +30,6 @@ Please see [reference](https://github.com/VanTamNguyen/Java-Backend/blob/master/
 * 3. Browser will use facebook's public key to encrypt the **session key** and sends it to facebook.
 * 4. Facebook will use its private key to decrypt the message of browser from step iii and get the session key
 * 5. Now both sides (FB and browser) have the **session key**. From now they will use session key to encrypt data before sending and decrypt data after receiving.
+
+### 3. References
+* [Long but very very good explaination](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
