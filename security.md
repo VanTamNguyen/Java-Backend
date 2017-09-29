@@ -125,7 +125,7 @@ serveral concerns:
 #### 6.3 Register an app
 Before you can begin OAuth process, you must first register an application with the service. In addition you must register ridirect URI with the service.
 * Client ID and Client Secret
-After registering your app, you will receive a Client ID and a Client Secret. Client ID can be public and Client Secret must keep confidential. If your deployed app cannot keep the secret confidential, such as single page Javascript app or mobile native app, the Client Secret is not used.
+<br/>After registering your app, you will receive a Client ID and a Client Secret. Client ID can be public and Client Secret must keep confidential. If your deployed app cannot keep the secret confidential, such as single page Javascript app or mobile native app, the Client Secret is not used.
 
 #### 6.4 Authorization
 OAuth2 provides serveral "grant type" for different use cases. They are:
@@ -140,7 +140,7 @@ Authorization Code is the most common grant type (flow) so below I will present 
 Web Server Apps run on a server where the source code of application is not available to public. So that you can use client secret on the application. And below I present the flow of authorization code:
 
 * **Authorization**
-    Create a "Log In" link that send user to Authorization Endpoint of Authorization Server. The link is like below
+    <br/>Create a "Log In" link that send user to Authorization Endpoint of Authorization Server. The link is like below
     ``` java
     https://oauth2server.com/auth?response_type=code&
             client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&scope=photos&state=1234zyx
@@ -168,7 +168,7 @@ Web Server Apps run on a server where the source code of application is not avai
     Now we (client app) received auth code from Authorization Server and we should verify the state.
 
 * **Token exchange**
-    Now we (client app) received auth code from Authorization Server. So we will continue to get access token from it by sending user to Token Endpoint of Authorization Server via this link:
+    <br/>Now we (client app) received auth code from Authorization Server. So we will continue to get access token from it by sending user to Token Endpoint of Authorization Server via this link:
     ```java
     POST https://api.oauth2server.com/token
                  grant_type=authorization_code&
