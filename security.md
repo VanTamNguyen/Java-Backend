@@ -1,7 +1,7 @@
 # Security
 
 ### 1. Asymmetric (public key) encryption and digital signature
-    First, note that, here I just provide an abstraction about public key encryption to understand
+    First, note that, here I just provide an abstraction of public key encryption to understand
     something (concepts) below (like JSON Web Token). To fully understand this topic I will 
     study *cryptography* in another github repository(course).
     
