@@ -13,6 +13,4 @@ Things I learn to become a Java backend engineer
 
 ### [Build tools](build_tools.md)
 
-### [Web server](webserver.md)
-
-### [Servlets](servlets.md)
+### [Servlet](servlets.md)
