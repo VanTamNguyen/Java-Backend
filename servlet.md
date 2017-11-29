@@ -26,6 +26,15 @@ To understand servlet we need to understand Web Server and CGI (Common Gateway I
     * Catalina is Tomcat's servlet container. Catalina implements Sun Microsystem's specifications for Java servlet and JavaServer Page (JSP).
     * Coyote is a Connector component for Tomcat that supports HTTP 1.1 protocol as a Web server.
 * **Web Application Structure on Tomcat**
+    ```
+    tc/webapps/application-name|
+                               |________ static_resouces(images, css...)
+                               |________ html_and_jsp_files
+                               |________ WEB-INF|
+                                                |________ lib
+                                                |________ web.xml
+                                                |________ classes (Java classes, Servlet classes)
+    ```
 
 ### 3. Servlet Life Cycle
 
