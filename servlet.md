@@ -13,7 +13,7 @@ To understand servlet we need understand Web Server and CGI (Common Gateway Inte
     * If the number of clients increases it takes more time to response
     * Platform dependent
 
-* **Servlet** is a Java program that extends capabilities of a server. Although servlets can respond to any type of requests [they most commonly implement application hosted on Web server](https://en.wikipedia.org/wiki/Java_servlet) (HTTP Servlet). As I understand it's a replacement of CGI. Servlet's functionality is similar to CGI that is generating response for client. But servlet does not run on a separate process, it runs under Web server's process.<br/>
+* **Servlet** is a Java program that extends capabilities of a server. Although servlets can respond to any type of requests [they most commonly implement application hosted on Web server](https://en.wikipedia.org/wiki/Java_servlet) (HTTP Servlet). As I understand it's a replacement of CGI. Servlet's functionality is similar to CGI that is generating response for client. But servlet does not run on a separate process, it runs under Web server's process.<br/><br/>
 ![servlet](images/java-servlet.png)
 
 * **Advantages of Servlet**
