@@ -1,16 +1,16 @@
 # Servlet
 
-### 1. What is servlet
+### 1. What is Servlet
 To understand servlet we need understand Web Server and CGI (Common Gateway Interface)
-* **Web Server**
+* **Web Server** is a (system of) software running on a server listen on default port 80 (maybe other port) to handle http requests and respond http response to client
 * **CGI**
 ### 2. Some concepts
-* **Servlet container**
-* **Servlet context**
+* **Servlet Container**
+* **Servlet Context**
 * **Tomcat**
-* **Web application structure on Tomcat**
+* **Web Application Structure on Tomcat**
 
-### 3. Servlet life cycle
+### 3. Servlet Life Cycle
 
 ### 4. ServletRequest
 
@@ -20,4 +20,4 @@ To understand servlet we need understand Web Server and CGI (Common Gateway Inte
 
 ### 7. Filter
 
-### 8. Session management
+### 8. Session Management
