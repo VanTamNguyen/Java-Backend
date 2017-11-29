@@ -1,9 +1,10 @@
 # Servlet
 
 ### 1. What is servlet
-
+To understand servlet we need understand Web Server and CGI (Common Gateway Interface)
+* **Web Server**
+* **CGI**
 ### 2. Some concepts
-* **Web server**
 * **Servlet container**
 * **Servlet context**
 * **Tomcat**
