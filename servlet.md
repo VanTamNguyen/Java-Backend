@@ -1,7 +1,7 @@
 # Servlet
 
 ### 1. What is Servlet
-To understand servlet we need understand Web Server and CGI (Common Gateway Interface)
+To understand servlet we need to understand Web Server and CGI (Common Gateway Interface).
 
 * **Web Server** is a (system of) software running on a server listen on default port 80 (maybe other port) to handle http requests and respond http responses to client.
 
@@ -20,10 +20,11 @@ To understand servlet we need understand Web Server and CGI (Common Gateway Inte
     * Better performance because it starts a thread for each requests instead of process
     * Portability because it's Java program
 
-### 2. Some concepts
-* **Servlet Container**
-* **Servlet Context**
-* **Tomcat**
+### 2. Tomcat
+* **Tomcat** is a Web server that implements Java Servlet specification. So it's also a Servlet Container.
+* **Components**
+    * Catalina is Tomcat's servlet container. Catalina implements Sun Microsystem's specifications for Java servlet and JavaServer Page (JSP).
+    * Coyote is a Connector component for Tomcat that supports HTTP 1.1 protocol as a Web server.
 * **Web Application Structure on Tomcat**
 
 ### 3. Servlet Life Cycle
