@@ -1,9 +1,9 @@
 # Servlet
 
 ### 1. What is Servlet
-To understand servlet we need to understand Web Server and CGI (Common Gateway Interface).
+To understand servlet we need to understand *Web Server* and *CGI (Common Gateway Interface)*.
 
-* **Web Server** is a (system of) software running on a server listen on default port 80 (maybe other port) to handle http requests and respond http responses to client.
+* **Web Server** is a (system of) software running on a server listen on default port 80 (maybe other port) to handle http requests and return http responses to client.
 
 * **CGI** offers a standard protocol for web servers to execute programs that execute like Console applications (also called Command-line interface programs) running on a server that generates web pages dynamically. Such programs are known as CGI scripts or simply as CGIs. As the name reveals, CGI acts as "gateway" between Web Server and the programs that generate dynamic web pages. When a http request comes to web server, it will parses request and pass parameters to CGI to trigger the program that generates response. <br/><br/>
 ![cgi](images/cgi.png)
@@ -23,8 +23,8 @@ To understand servlet we need to understand Web Server and CGI (Common Gateway I
 ### 2. Tomcat
 * **Tomcat** is a Web server that implements Java Servlet specification. So it's also a Servlet Container.
 * **Components**
-    * Catalina is Tomcat's servlet container. Catalina implements Sun Microsystem's specifications for Java servlet and JavaServer Page (JSP).
-    * Coyote is a Connector component for Tomcat that supports HTTP 1.1 protocol as a Web server.
+    * **Catalina** is Tomcat's servlet container. Catalina implements Sun Microsystem's specifications for Java servlet and JavaServer Page (JSP).
+    * **Coyote** is a Connector component for Tomcat that supports HTTP 1.1 protocol as a Web server. It listens for incoming connections to the server on a specific TCP port and forwards the request to the Tomcat Engine to process the request and send back a response to the requesting client.
 * **Web Application Structure on Tomcat**
     ```
     tc/webapps/application-name|
