@@ -35,6 +35,8 @@ To understand servlet we need to understand *Web Server* and *CGI (Common Gatewa
                                                 |________ web.xml
                                                 |________ classes (Java classes, Servlet classes)
     ```
+    
+    web.xml is called Deployment Descriptor. It describes servelets and other components that make up the servlet application.
 
 ### 3. Servlet Life Cycle
 
