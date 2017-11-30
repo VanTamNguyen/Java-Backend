@@ -75,12 +75,6 @@ To understand servlet we need to understand *Web Server* and *CGI (Common Gatewa
 
 * After the method **service()** is completed the thread dies and 2 objects (request and response) are destroyed.
 
-### 4. ServletRequest
+### 4. Filter
 
-### 5. ServletResponse
-
-### 6. ServletContext
-
-### 7. Filter
-
-### 8. Session Management
+### 5. Session Management
