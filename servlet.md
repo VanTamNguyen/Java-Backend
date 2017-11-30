@@ -61,7 +61,19 @@ To understand servlet we need to understand *Web Server* and *CGI (Common Gatewa
 
 ### 3. How Servlet works
 * Client sends request **GET /hello** to Web server (Servlet Container)
+
 * The Servlet Container finds the servlet to serve request by looking at deployment descriptor. And it finds servlet **tamco**. If this is the first time the servlet **tamco** is used, it will be loaded from class file and initialized.
+
+* The Servlet Container creates 2 objects **HttpServletRequest** and **HttpServletResponse**. Then it will allocate a thread to call method **service** of the servlet **tamco** to serve the request.
+    ```
+    tamco.service(httpServletRequest, httpServletResponse);
+    ```
+    
+* Servlet **tamco** then decides which method to call (doGet, doPost...) based on HTTP Request Method.
+
+* Servlet **tamco** uses httpServletResponse to write response to client.
+
+* After the method **service()** is completed the thread dies and 2 objects (request and response) are destroyed.
 
 ### 4. ServletRequest
 
