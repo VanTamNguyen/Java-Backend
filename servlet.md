@@ -36,9 +36,32 @@ To understand servlet we need to understand *Web Server* and *CGI (Common Gatewa
                                                 |________ classes (Java classes, Servlet classes)
     ```
     
-    web.xml is called Deployment Descriptor. It describes servelets and other components that make up the servlet application.
+    web.xml is called Deployment Descriptor. It describes servelets and other components that make up the servlet application. Below is an sample of deployment descriptor:
+    
+    ```
+    <?xml version="1.0" encoding="UTF-8" ?>
+        <web-app
+            version="3.0"
+            xmlns="http://java.sun.com/xml/ns/javaee"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
-### 3. Servlet Life Cycle
+
+            <servlet>
+                <servlet-name>tamco</servlet-name>
+                <servlet-class>com.tamco.servlet.TamCoServlet</servlet-class>
+            </servlet>
+
+            <servlet-mapping>
+                <servlet-name>tamco</servlet-name>
+                <url-pattern>/hello</url-pattern>
+            </servlet-mapping>
+    </web-app>
+    ```
+
+### 3. How Servlet works
+* Client sends request **GET /hello** to Web server (Servlet Container)
+* The Servlet Container finds the servlet to serve request by looking at deployment descriptor. And it finds servlet **tamco**. If this is the first time the servlet **tamco** is used, it will be loaded from class file and initialized.
 
 ### 4. ServletRequest
 
