@@ -3,13 +3,13 @@ Things I learn to become a Java backend engineer
 
 ### [Servlet](servlet.md)
 
-### [JDBC (Java Database Connectivity)](jdbc.md)
+### [Java Database Connectivity - JDBC](jdbc.md)
 
 ### [RESTful resources](rest.md)
 
 ### [Security](security.md)
 
-### [Test](test.md)
+### [Unit and Integration Test](test.md)
 
 ### [Frameworks](https://en.wikipedia.org/wiki/Spring_Framework)
 * [Spring](spring.md)
