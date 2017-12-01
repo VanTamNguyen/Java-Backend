@@ -6,6 +6,10 @@ Things I learn to become a Java backend engineer
 * [Spring Boot](spring_boot.md)
 * [Hibernate](hibernate.md)
 
+### [Build tools](https://en.wikipedia.org/wiki/Apache_Maven)
+* [Maven](maven.md)
+* [Gradle](gradle.md)
+
 ### [RESTful resources](rest.md)
 
 ### [Database](database.md)
@@ -13,9 +17,5 @@ Things I learn to become a Java backend engineer
 ### [Security](security.md)
 
 ### [Test](test.md)
-
-### [Build tools](https://en.wikipedia.org/wiki/Apache_Maven)
-* Maven
-* Gradle
 
 ### [Servlet](servlet.md)
