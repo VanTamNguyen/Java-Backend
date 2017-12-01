@@ -76,5 +76,7 @@ To understand servlet we need to understand *Web Server* and *CGI (Common Gatewa
 * After the method **service()** is completed the thread dies and 2 objects (request and response) are destroyed.
 
 ### 4. Filter
+* Filters are components to perform some filtering tasks.
+* Filter is used for pre-processing of servlet requests and post-processing of servlet responses.
 
 ### 5. Session Management
