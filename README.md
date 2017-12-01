@@ -3,7 +3,7 @@ Things I learn to become a Java backend engineer
 
 ### [Servlet](servlet.md)
 
-### [Java Database Connectivity - JDBC](jdbc.md)
+### [Java Database Connectivity](jdbc.md)
 
 ### [RESTful resources](rest.md)
 
