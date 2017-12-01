@@ -1,7 +1,10 @@
 # Java backend
 Things I learn to become a Java backend engineer
 
-### [Frameworks: Spring and Hibernate](frameworks.md)
+### Frameworks
+* [Spring](spring.md)
+* [Spring Boot](spring_boot.md)
+* [Hibernate](hibernate.md)
 
 ### [RESTful resources](rest.md)
 
