@@ -14,6 +14,8 @@ Things I learn to become a Java backend engineer
 
 ### [Test](test.md)
 
-### [Build tools: Maven and Gradle](build_tools.md)
+### Build tools
+* Maven
+* Gradle
 
 ### [Servlet](servlet.md)
