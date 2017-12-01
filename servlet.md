@@ -78,5 +78,6 @@ To understand servlet we need to understand *Web Server* and *CGI (Common Gatewa
 ### 4. Filter
 * Filters are components to perform some filtering tasks.
 * Filter is used for pre-processing of servlet requests and post-processing of servlet responses.
+* Filters are configured in deployment descriptor.
 
 ### 5. Session Management
