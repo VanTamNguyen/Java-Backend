@@ -15,4 +15,14 @@
         <servlet-name>tamco</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>password</filter-name>
+        <filter-class>com.tamco.servlet.TamCoFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>password</filter-name>
+        <servlet-name>tamco</servlet-name>
+    </filter-mapping>
 </web-app>
