@@ -1,7 +1,7 @@
 # Java backend
 Things I learn to become a Java backend engineer
 
-### Frameworks
+### [Frameworks](https://en.wikipedia.org/wiki/Spring_Framework)
 * [Spring](spring.md)
 * [Spring Boot](spring_boot.md)
 * [Hibernate](hibernate.md)
@@ -14,7 +14,7 @@ Things I learn to become a Java backend engineer
 
 ### [Test](test.md)
 
-### Build tools
+### [Build tools](https://en.wikipedia.org/wiki/Apache_Maven)
 * Maven
 * Gradle
 
