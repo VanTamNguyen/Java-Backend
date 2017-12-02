@@ -10,14 +10,15 @@ import java.io.PrintWriter;
 /**
  * Created by tam-co on 29/11/2017.
  */
-public class TamCoServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>");
-		out.println("<h1>Hello from TamCO</h1>");
+		out.println("<h1>Hello TamCO!</h1>");
+		out.println("<h2>Congrats! You have logged in.</h2>");
 		out.println("</body></html>");
 	}
 }
