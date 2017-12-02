@@ -14,10 +14,13 @@ public class LoginServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
+		req.getSession();
+
+		String welcome = req.getParameter("password");
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>");
-		out.println("<h1>Hello TamCO!</h1>");
+		out.println("<h1>Hello " + welcome + "!</h1>");
 		out.println("<h2>Congrats! You have logged in.</h2>");
 		out.println("</body></html>");
 	}
