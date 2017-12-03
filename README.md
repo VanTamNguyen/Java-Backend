@@ -3,7 +3,7 @@ Things I learn to become a Java backend engineer
 
 ### [Servlet](servlet.md)
 
-### [Java Database Connectivity](jdbc.md)
+### [JPA with Hibernate](hibernate.md)
 
 ### [RESTful resources](rest.md)
 
@@ -14,7 +14,6 @@ Things I learn to become a Java backend engineer
 ### [Frameworks](https://en.wikipedia.org/wiki/Spring_Framework)
 * [Spring](spring.md)
 * [Spring Boot](spring_boot.md)
-* [Hibernate](hibernate.md)
 
 ### [Build tools](https://en.wikipedia.org/wiki/Apache_Maven)
 * [Maven](maven.md)
