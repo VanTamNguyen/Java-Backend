@@ -10,8 +10,7 @@
     <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
-        <modelVersion>3.0.0</modelVersion>
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
         <groupId>com.tamco</groupId>
         <artifactId>java-gateway</artifactId>
@@ -63,6 +62,12 @@
     ```
 
 ### Maven Repositories
+Maven has three types of repository:
+* **Local repository** is the directory (user-home/.m2) on developer's machine. This contains all dependency downloads. Your own project can be built and installed in local repository by running the command **mvn install**.
+* **Central repository** is the repository provided by Maven community. By default, Maven looks in this repository to download any dependencies that has not existed on local repository yet.
+* **Remote repository** is a repository on a web server from which Maven can download dependencies, just like the central repository. A remote repository can be located anywhere on the internet, or inside a local network.
+
+
 
 ### Maven Build Liffecycles, Phases and Goals
 
