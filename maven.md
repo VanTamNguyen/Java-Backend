@@ -75,7 +75,7 @@ Maven has 3 built-in Build Lifecycles:
     * default
     * clean
     * site
-Each of these Build Lifecycles takes care of different aspect of building software project. The **default** life cycle handles everything related to compiling and packaging your project. The **clean** life cycle handles everyting related to removing temporary files from output directory. The **site** life cycle handles everything related to generating document.
+    <br/>Each of these Build Lifecycles takes care of different aspect of building software project. The **default** life cycle handles everything related to compiling and packaging your project. The **clean** life cycle handles everyting related to removing temporary files from output directory. The **site** life cycle handles everything related to generating document.
 
 
 
