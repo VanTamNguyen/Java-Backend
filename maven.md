@@ -23,20 +23,21 @@
 * **version** is the version of the project.
 
 ### Maven Directory Structure
-    ```
-    src|
-       |_______ main|
-       |            |_______ java
-       |            |_______ resources
-       |            |_______ webapp
-       |
-       |_______ test|
-       |            |_______ java
-       |            |_______ resources
-       |
-       |_______ target
-    
-    ```
+    root|
+        |_______ src|
+        |           |_______ main|
+        |           |            |_______ java
+        |           |            |_______ resources
+        |           |            |_______ webapp
+        |           |
+        |           |_______ test|
+        |                        |_______ java
+        |                        |_______ resources
+        |
+        |_______ target
+        
+* **src** is the root directory for source code and test code.
+* **target** is the folder that contains the results of the build process (jar or war file).
 
 ### Project Dependencies
 
