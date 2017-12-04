@@ -18,8 +18,25 @@
         <version>1.0.0</version>
     </project>
     ```
+* **groupId** is the unique ID for a project. Most often we use Java root package name of the project as the groupId. But it does not have to be the Java package name and does not need to use dot notation.
+* **artifactId** is the name of the project.
+* **version** is the version of the project.
 
 ### Maven Directory Structure
+    ```
+    src|
+       |_______ main|
+       |            |_______ java
+       |            |_______ resources
+       |            |_______ webapp
+       |
+       |_______ test|
+       |            |_______ java
+       |            |_______ resources
+       |
+       |_______ target
+    
+    ```
 
 ### Project Dependencies
 
