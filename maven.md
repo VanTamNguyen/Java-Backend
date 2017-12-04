@@ -88,8 +88,12 @@ Maven has 3 built-in Build Lifecycles:
     | install | Installs the package to local repository, for use as a dependency in other projects locally. |
     | deploy | Copy the final package to a remote repository to share with other developers and projects. |
     
-* An example
-    * **mvn clean package** will execute all build phases of clean life cycle ang then execute the build phase package of the default life cycle.
+### Maven Command Structure
+A Maven command consists of 2 elements:
+* mvn
+* One or more build life cycles, build phases or build goals
+
+For examlple, **mvn clean package** will execute all build phases of clean life cycle ang then execute the build phase package of the default life cycle.
 
 ### Maven Build Profiles
 
