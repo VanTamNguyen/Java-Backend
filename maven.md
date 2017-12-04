@@ -83,7 +83,10 @@ Maven has 3 built-in Build Lifecycles:
     | --- | --- |
     | validate | Validates that the project is correct and all necessary information is available. This also makes sure that the dependencies are downloaded. |
     | compile | Compiles the source code of the project. |
-    | test | Run tests againts  |
+    | test | Run tests againts the compiles source code using the suitable unit testing framework. |
+    | package | Packs the compiles source code in its distributable format, such as JAR or WAR. |
+    | install | Installs the package to local repository, for use as a dependency in other projects locally. |
+    | deploy | Copy the final package to a remote repository to share with other developers and projects. |
 
 ### Maven Build Profiles
 
