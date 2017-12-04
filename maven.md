@@ -40,6 +40,27 @@
 * **target** is the folder that contains the results of the build process (jar or war file).
 
 ### Project Dependencies
+* The Java ecosystem is very HUGE. Today we have ton ton of Java open source libs out there. Almost Java business projects re-use those libraries, so we need a way to manage those dependencies.
+* Maven provides built-in dependency management.
+    ```
+    <project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+        <groupId>com.tamco</groupId>
+        <artifactId>java-gateway</artifactId>
+        <version>1.0.0</version>
+
+        <dependencies>
+            <dependency>
+              <groupId>org.jsoup</groupId>
+              <artifactId>jsoup</artifactId>
+              <version>1.7.1</version>
+            </dependency>
+        </dependencies>
+    </project>
+    ```
 
 ### Maven Repositories
 
