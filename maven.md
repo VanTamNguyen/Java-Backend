@@ -76,9 +76,14 @@ Maven has 3 built-in Build Lifecycles:
     * clean
     * site
 * Each of these Build Lifecycles takes care of different aspect of building software project. The **default** life cycle handles everything related to compiling and packaging your project. The **clean** life cycle handles everyting related to removing temporary files from output directory. The **site** life cycle handles everything related to generating document.
-* Each life cycle is divided into sequence of build phases. And build phases are divided into build goals. So, the total build process is the sequence of build life cycle(s), build phases and goals. You can execute a whole build life cycle (like *cleand* and *site*), or a build phase (like *install*), or a goal. Note: you cannot execute the *default* life cycle directly, you have to specify the phase in that life cycle.
+* Each life cycle is divided into sequence of build phases. And build phases are divided into build goals. So, the total build process is the sequence of build life cycle(s), build phases and goals. You can execute a whole build life cycle (like *clean* and *site*), or a build phase (like *install*), or a goal. Note: you cannot execute the *default* life cycle directly, you have to specify the phase in that life cycle.
+* The table below describes some most commonly used phases:
 
-
+    | Build Phase | Description |
+    | --- | --- |
+    | validate | Validates that the project is correct and all necessary information is available. This also makes sure that the dependencies are downloaded. |
+    | compile | Compiles the source code of the project. |
+    | test | Run tests againts  |
 
 ### Maven Build Profiles
 
