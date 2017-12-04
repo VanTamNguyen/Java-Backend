@@ -70,6 +70,12 @@ Maven has three types of repository:
 
 
 ### Maven Build Liffecycles, Phases and Goals
+When Maven builds a project it follows a Build Lifecycle. A Build Lifecycle is divided into Build Phases and Build Phases are divided in to Build Goals.
+Maven has 3 built-in Build Lifecycles:
+* default
+* clean
+* site
+
 
 ### Maven Build Profiles
 
