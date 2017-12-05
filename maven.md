@@ -34,7 +34,9 @@
         |                        |_______ resources
         |
         |_______ target
-        
+        |
+        |_______ pom.xml
+       
 * **src** is the root directory for source code and test code.
 * **target** is the folder that contains the results of the build process (jar or war file).
 
