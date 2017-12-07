@@ -19,11 +19,11 @@
 * A relationship can be bidirectional or unidirectional. In bidirectional relationship, both classes store the reference to each other. While in unidirectional relationship, only one class holds reference to the other class.
 * In bidirectional relationship, we need to specify the owning side of this relationship with attribute ```mappedBy```. For example ```@ManyToMany(mappedBy="attributeOfOwningClass")```
 * Relationship annotation
-    * @OneToOne
-    * @OneToMany
-    * @ManyToOne
-    * @ManyToMany
+    * ```@OneToOne```
+    * ```@OneToMany```
+    * ```@ManyToOne```
+    * ```@ManyToMany```
 
 #### Entity Manager
-* The entity manager ```javax.persistence.EntityManager``` provides the operations from and to database. With ```EntityManage``` you can create, read, update, delete object from/to database.
+* The entity manager ```javax.persistence.EntityManager``` provides the operations from and to database. With ```EntityManager``` you can create, read, update, delete object from/to database.
 * Entities which is managed by an EntityManage will automatically propagate changes to database (if this happens within a commit statement).
