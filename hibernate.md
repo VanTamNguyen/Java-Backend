@@ -27,3 +27,8 @@
 #### Entity Manager
 * The entity manager ```javax.persistence.EntityManager``` provides the operations from and to database. With ```EntityManager``` you can create, read, update, delete object from/to database.
 * Entities which is managed by an EntityManage will automatically propagate changes to database (if this happens within a commit statement).
+
+
+
+### Hibernate
+
