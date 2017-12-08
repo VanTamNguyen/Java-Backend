@@ -32,7 +32,7 @@
 
 ### 2. Hibernate
 #### 2.1 Architecture
-![arch](images/hibernate_arch.png)
+![arch](images/hiber_arch.png)
 
 * Hibernate uses many existing Java API such as **JTA (Java Transaction API)**, **JDBC (Java Database Connectivity)**, **JNDI (Java Naming and Directory Interface)**. JDBC helps us to do some common tasks with relational databases such as open/close connection, query... JTA and JNDI help Hibernate to be integrated with J2EE application server.
 * **Configuration** Object is the first object the Hibernate application creates. It's usually creates once during application startup. The configuration object provides two keys components:
