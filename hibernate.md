@@ -32,8 +32,7 @@
 
 ### Hibernate
 #### Architecture
-    *
-        ![arch](images/hibernate_arch.png)
+![arch](images/hibernate_arch.png)
 
 
 
