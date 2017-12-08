@@ -31,4 +31,14 @@
 
 
 ### Hibernate
+#### Architecture
 
+#### Configuration
+
+#### Session
+
+#### Persistent Class
+
+#### Mapping Files
+
+#### Mapping Types
