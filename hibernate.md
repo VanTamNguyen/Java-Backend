@@ -36,7 +36,7 @@
 
 * Hibernate uses many existing Java API such as **JTA (Java Transaction API)**, **JDBC (Java Database Connectivity)**, **JNDI (Java Naming and Directory Interface)**. JDBC helps us to do some common tasks with relational databases such as open/close connection, query... JTA and JNDI help Hibernate to be integrated with J2EE application server.
 
-* **Configuration** Object is the first object the Hibernate application creates. It's usually creates once during application startup. The configuration object provides two keys components:
+* **Configuration Object** is the first object the Hibernate application creates. It's usually creates once during application startup. The configuration object provides two keys components:
     * Database Connection -- provides properties to connect with database such as url, username/password... 
     * Class Mapping Setup -- provides the link between Java classes and database tables.
 
@@ -47,6 +47,11 @@
 
 * **Session Object** is used to get a physical connection with database. A Session is designed to be instantiated each time an interaction with database needed. **Persistent objects are saved and retrieved through the Session**. Session objects should not be kept for a long time.
 
+* **Transaction** in Hibernate is handled by underlying transaction manager and transaction (from JDBC and JTA).
+
+* **Query Object** use SQL or HQL (Hibernate Query Language) to retrieve data from database and create objects. A Query instance is used to bind query parameters, limit the number of results and finally execute the query.
+
+* **Criteria Object** are used to create and execute object oriented criteria queries to retrieve objects.
 
 #### 2.2 Configuration
 
