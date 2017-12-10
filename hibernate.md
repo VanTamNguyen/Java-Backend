@@ -42,8 +42,8 @@
 
 * **SessionFactory Object**
     * Configuration object is used to create SessionFactory object. And the SessionFactory object will be used to configure Hibernate for the application and to create Session objects.
-    * The SessionFactory object is a thread-safe object and is used by all threads in the application.<br/>
-    * The SessionFactory object is created during application start up. If you use many databases in your application, you need to create SesstionFactory object for each database.
+    * The SessionFactory object is a thread-safe object and is used by all threads in the application.
+    * The SessionFactory object is created during application start up. If you use many databases in your application, you need to create SesstionFactory object for each database.
 
 * **Session Object** is used to get a physical connection with database. A Session is designed to be instantiated each time an interaction with database needed. **Persistent objects are saved and retrieved through the Session**. Session objects should not be kept for a long time.
 
