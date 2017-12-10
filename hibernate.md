@@ -70,6 +70,40 @@ Hibernate requires to know set of configuration settings related to database and
     | hibernate.connection.pool_size | Max connections in Hibernate connection pool |
     | hibernate.connection.autocommit | Allow autocommit mode to be used for JDBC connection |
     
+* **Hibernate configuration for MySQL example** <br/>
+    ```
+    <?xml version = "1.0" encoding = "utf-8"?>
+    <!DOCTYPE hibernate-configuration SYSTEM 
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+    <hibernate-configuration>
+        <session-factory>
+            <property name = "hibernate.dialect">
+                org.hibernate.dialect.MySQLDialect
+            </property>
+
+            <property name = "hibernate.connection.driver_class">
+                com.mysql.jdbc.Driver
+            </property>
+ 
+            <!-- Assume test is the database name -->
+            <property name = "hibernate.connection.url">
+                jdbc:mysql://localhost/test
+            </property>
+
+            <property name = "hibernate.connection.username">
+                root
+            </property>
+
+            <property name = "hibernate.connection.password">
+                root123
+            </property>
+
+            <!-- List of XML map ping files -->
+            <mapping resource = "Employee.hbm.xml"/>
+
+        </session-factory>
+    </hibernate-configuration>
+    ```
 
 #### 2.3 Session
 
