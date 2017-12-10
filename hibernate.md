@@ -64,8 +64,11 @@ Hibernate requires to know set of configuration settings related to database and
     | -- |----|
     | hibernate.dialect | This property makes Hibernate generate the appropriate SQL query for the choosen database |
     | hibernate.connection.driver_class | The JDBC Driver class |
+    | hibernate.connection.url | The JDBC URL to a database instance |
     | hibernate.connection.username | The database username |
     | hibernate.connection.password | The database password |
+    | hibernate.connection.pool_size | Max connections in Hibernate connection pool |
+    | hibernate.connection.autocommit | Allow autocommit mode to be used for JDBC connection |
     
 
 #### 2.3 Session
