@@ -54,6 +54,19 @@
 * **Criteria Object** are used to create and execute object oriented criteria queries to retrieve objects.
 
 #### 2.2 Configuration
+Hibernate requires to know set of configuration settings related to database and where to find mapping between Java classes and database tables. All such information is usually supplied as a standard Java properties file called **hibernate.properties** or a xml file called **hibernate.cfg.xml**.
+
+* **Hibernate properties**<br/>
+    The table below contains the most important properties Hibernate needs to know.
+
+   
+    | Property | Description |
+    | -- |----|
+    | hibernate.dialect | This property makes Hibernate generate the appropriate SQL query for the choosen database |
+    | hibernate.connection.driver_class | The JDBC Driver class |
+    | hibernate.connection.username | The database username |
+    | hibernate.connection.password | The database password |
+    
 
 #### 2.3 Session
 
