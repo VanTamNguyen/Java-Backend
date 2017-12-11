@@ -133,6 +133,13 @@ catch (Exception e) {
 ```
 
 #### 2.4 Persistent Class
+The center concept of Hibernate is to take the values of Java object attributes and persist them to database tables and retrieve rows in tables as Java objects. A document mapping helps Hibernate in determining how to pull values from objects and map them with tables and associated fields.<br/>
+Java classes who instances will be stored in a database are called persistent classes in Hibernate. Persistent classes have to follow some rules below (but none of them is required):
+* All persistent classes need a default constructor
+* All persistent classes need a property called ID to allow easy identification with database
+* All persistent attributes should be declared ```private``` and have getter/setter follow Java Bean convention (**getXXX/setXXX**)
+* 
+
 
 #### 2.5 Mapping Files
 
