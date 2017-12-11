@@ -108,9 +108,9 @@ Hibernate requires to know set of configuration settings related to database and
 #### 2.3 Session
 The Session is used to get a physical connection with database. The Session object is instantiated each time an interaction with database needed. **Persistent objects are saved and retrieved through the a Session object.** The Session objects should not be kept for a long time because they are usually thread safe.<br/>
 The Session object main functions are create/read/update/delete entities. Entity instances may exist in one of 3 states at a given point in time:
-* transient
-* persistent
-* detached
+* **transient** -- A new instance of a persistent class, which is not associated with a Session and has no representation in the database.
+* **persistent** -- We can make a transient object persistent by associating it with a Session. A persistent object will ha a representation in the database. 
+* **detached** -- Once we close the Hibernate Session, the persistent object will become the detached object.
 
 #### 2.4 Persistent Class
 
