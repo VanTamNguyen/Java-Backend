@@ -110,7 +110,27 @@ The Session is used to get a physical connection with database. The Session obje
 The Session object main functions are create/read/update/delete entities. Entity instances may exist in one of 3 states at a given point in time:
 * **transient** -- A new instance of a persistent class, which is not associated with a Session and has no representation in the database.
 * **persistent** -- We can make a transient object persistent by associating it with a Session. A persistent object will ha a representation in the database. 
-* **detached** -- Once we close the Hibernate Session, the persistent object will become the detached object.
+* **detached** -- Once we close the Hibernate Session, the persistent object will become the detached object.<br/>
+
+A typical transaction should use the following idiom:
+```
+Session session = factory.openSession();
+Transaction tx = null;
+
+try {
+   tx = session.beginTransaction();
+   // do some work
+   ...
+   tx.commit();
+}
+
+catch (Exception e) {
+   if (tx!=null) tx.rollback();
+   e.printStackTrace(); 
+} finally {
+   session.close();
+}
+```
 
 #### 2.4 Persistent Class
 
