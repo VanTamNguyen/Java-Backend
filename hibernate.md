@@ -138,8 +138,6 @@ Java classes who instances will be stored in a database are called persistent cl
 * All persistent classes need a default constructor
 * All persistent classes need a property called ID to allow easy identification with database
 * All persistent attributes should be declared ```private``` and have getter/setter follow Java Bean convention (**getXXX/setXXX**)
-* 
-
 
 #### 2.5 Mapping Files
 
