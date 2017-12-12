@@ -141,4 +141,21 @@ Java classes who instances will be stored in a database are called persistent cl
 
 #### 2.5 Mapping Files
 
+
+
 #### 2.6 Mapping Types
+
+
+
+#### 2.7 O/R Mapping
+
+
+
+#### 2.8 Annotations
+
+
+
+#### 2.9 Criteria Queries
+
+
+#### 2.10 Caching
