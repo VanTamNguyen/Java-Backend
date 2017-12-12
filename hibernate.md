@@ -182,15 +182,12 @@ Hibernate has to map the Java data types to RDBMS types and vice versa. The tabl
 | boolean/java.lang.Boolean | char(1) ('t' or 'f') |
 
 
-#### 2.7 O/R Mapping
+
+#### 2.7 Annotations
 
 
 
-#### 2.8 Annotations
+#### 2.8 Criteria Queries
 
 
-
-#### 2.9 Criteria Queries
-
-
-#### 2.10 Caching
+#### 2.9 Caching
