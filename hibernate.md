@@ -165,12 +165,16 @@ The O/R mappings are defined in an XML document. Hibernate will parse this file 
       
    </class>
 </hibernate-mapping>
-
 ```
 
 
 #### 2.6 Mapping Types
+Hibernate has to map the Java data types to RDBMS types and vice versa. The table below describes corresponding types between Java data types and RDBMS types.
 
+| Java Type | ANSI SQL Type |
+| ------ | ------------ |
+| int/java.lang.Integer | integer |
+| long/java.lang.Long | bigint |
 
 
 #### 2.7 O/R Mapping
