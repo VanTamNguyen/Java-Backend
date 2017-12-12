@@ -175,6 +175,11 @@ Hibernate has to map the Java data types to RDBMS types and vice versa. The tabl
 | ------ | ------------ |
 | int/java.lang.Integer | integer |
 | long/java.lang.Long | bigint |
+| short/java.lang.Short | smallint |
+| float/java.lang.Float | float |
+| double/java.lang.Double | double |
+| String | varchar |
+| boolean/java.lang.Boolean | char(1) ('t' or 'f') |
 
 
 #### 2.7 O/R Mapping
