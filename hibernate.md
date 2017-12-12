@@ -140,7 +140,33 @@ Java classes who instances will be stored in a database are called persistent cl
 * All persistent attributes should be declared ```private``` and have getter/setter follow Java Bean convention (**getXXX/setXXX**)
 
 #### 2.5 Mapping Files
+The O/R mappings are defined in an XML document. Hibernate will parse this file to map persistent classes to database tables and vice versa. Below is an example of xml mapping file:
 
+```
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "Employee" table = "EMPLOYEE">
+      
+      <meta attribute = "class-description">
+         This class contains the employee detail. 
+      </meta>
+      
+      <id name = "id" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "firstName" column = "first_name" type = "string"/>
+      <property name = "lastName" column = "last_name" type = "string"/>
+      <property name = "salary" column = "salary" type = "int"/>
+      
+   </class>
+</hibernate-mapping>
+
+```
 
 
 #### 2.6 Mapping Types
