@@ -187,7 +187,8 @@ Hibernate has to map the Java data types to RDBMS types and vice versa. The tabl
 Hibernate annotation is the newest way to define mappings without using the XML file. You can use annotations in addition to or as a replacement of XML mapping metadata.
 
 * **@Entity Annotation** marks classes as persistent class. With this annotation, the classes must have a default constructor (no-argument constructor).
-
+* **@Table Annotation** allows to specify the details of table that will be used to persist the entity to database. Table annotation provides 4 attributes, allows to override the name of the table, its catalogue, its schema and enforce the unique constraint on columns of the table.
+* **@Id and @GeneratedValue Annotations** -- @Id annotation specifies the primary key of entity bean. The primary key can be a single field or a combination of multiple fields.
 
 #### 2.8 Criteria Queries
 
