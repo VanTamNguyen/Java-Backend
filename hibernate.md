@@ -189,6 +189,13 @@ Hibernate annotation is the newest way to define mappings without using the XML 
 * **@Entity Annotation** marks classes as persistent class. With this annotation, the classes must have a default constructor (no-argument constructor).
 * **@Table Annotation** allows to specify the details of table that will be used to persist the entity to database. Table annotation provides 4 attributes, allows to override the name of the table, its catalogue, its schema and enforce the unique constraint on columns of the table.
 * **@Id and @GeneratedValue Annotations** -- @Id annotation specifies the primary key of entity bean. The primary key can be a single field or a combination of multiple fields.
+* **@Column Annotation** specifies the details of column to which the field will be mapped. Below are the most commonly used attributes of @Column annotation:
+    * name 
+    * length
+    * nullable
+    * unique
+    
+
 
 #### 2.8 Criteria Queries
 
