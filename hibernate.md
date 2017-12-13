@@ -184,7 +184,9 @@ Hibernate has to map the Java data types to RDBMS types and vice versa. The tabl
 
 
 #### 2.7 Annotations
+Hibernate annotation is the newest way to define mappings without using the XML file. You can use annotations in addition to or as a replacement of XML mapping metadata.
 
+* **@Entity Annotation** marks classes as persistent class. With this annotation, the classes must have a default constructor (no-argument constructor).
 
 
 #### 2.8 Criteria Queries
