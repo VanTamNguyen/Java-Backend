@@ -238,5 +238,29 @@ List<Employee> employees = cr.list();
     // To check if the given property is not empty
     cr.add(Restrictions.isNotEmpty("salary"));
     ```
+We can add AND/OR conditions using LogicalExpression restriction to Criteria query. Following is the example of using LogicalExpression:
+    ```
+    Criteria cr = session.createCriteria(Employee.class);
+    
+    Criterion salary = Restrictions.gt("salary", 2000);
+    Criterion name = Restrictions.ilike("firstNname","zara%");
+    
+    // To get records matching with OR conditions
+    LogicalExpression orExp = Restrictions.or(salary, name);
+    cr.add( orExp );
+    
+    // To get records matching with AND conditions
+    LogicalExpression andExp = Restrictions.and(salary, name);
+    cr.add( andExp );
+    
+    List results = cr.list();
+    ```
+
+* **Pagination with Criteria** -- Criteria interface provides 2 methods to do pagination:
+    * *public Criteria setFirstResult(int first)* -- This method sets the first row in the result set, starting with row 0.
+    * *public Criteria setMaxResults(int max)* -- This method sets the page size, the maximun number of objects to get each time.
+
+* **Sorting the Results** 
+
 
 #### 2.9 Caching
