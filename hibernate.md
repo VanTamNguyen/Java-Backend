@@ -238,7 +238,7 @@ List<Employee> employees = cr.list();
     // To check if the given property is not empty
     cr.add(Restrictions.isNotEmpty("salary"));
     ```
-We can add AND/OR conditions using LogicalExpression restriction to Criteria query. Following is the example of using LogicalExpression:
+    We can add AND/OR conditions using LogicalExpression restriction to Criteria query. Following is the example of using LogicalExpression:
     ```
     Criteria cr = session.createCriteria(Employee.class);
     
