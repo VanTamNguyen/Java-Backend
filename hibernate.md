@@ -198,9 +198,10 @@ Hibernate annotation is the newest way to define mappings without using the XML 
 
 
 #### 2.8 Criteria Queries
-Criteria is one way to manipulate objects and in turn data available in RDBMS tables. Criteria API allows us to make criteria query programmatically where we can apply filtration rules and logic conditions.
-
-
-
-
+Criteria is one way to manipulate objects and in turn data available in RDBMS tables. Criteria API allows us to make criteria query programmatically where we can apply filtration rules and logic conditions. <br/>
+The Hibernate Session interface provides method **createCriteria()** to create Criteria object that returns instances of the persistent object's class when we execute criteria query.<br/>
+```
+Criteria cr = session.createCriteria(Employee.class);
+List<Employee> employees = cr.list();
+```
 #### 2.9 Caching
