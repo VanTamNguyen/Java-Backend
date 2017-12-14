@@ -204,4 +204,39 @@ The Hibernate Session interface provides method **createCriteria()** to create C
 Criteria cr = session.createCriteria(Employee.class);
 List<Employee> employees = cr.list();
 ```
+
+* **Restrictions with Criteria** -- We can use the method *add(Criterion)* to add restrictions to Criteria query. Following are the examples of adding restrictions to Criteria query:
+    ```
+    Criteria cr = session.createCriteria(Employee.class);
+    // To get records having salary equal to 2000
+    cr.add(Restrictions.eq("salary", 2000));
+    
+    // To get records having salary more than 2000
+    cr.add(Restrictions.gt("salary", 2000));
+    
+    // To get records having salary less than 2000
+    cr.add(Restrictions.lt("salary", 2000));
+    
+    // To get records having fistName starting with zara
+    cr.add(Restrictions.like("firstName", "zara%"));
+    
+    // Case sensitive form of the above restriction.
+    cr.add(Restrictions.ilike("firstName", "zara%"));
+    
+    // To get records having salary in between 1000 and 2000
+    cr.add(Restrictions.between("salary", 1000, 2000));
+    
+    // To check if the given property is null
+    cr.add(Restrictions.isNull("salary"));
+    
+    // To check if the given property is not null
+    cr.add(Restrictions.isNotNull("salary"));
+    
+    // To check if the given property is empty
+    cr.add(Restrictions.isEmpty("salary"));
+    
+    // To check if the given property is not empty
+    cr.add(Restrictions.isNotEmpty("salary"));
+    ```
+
 #### 2.9 Caching
