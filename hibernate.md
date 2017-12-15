@@ -261,6 +261,20 @@ List<Employee> employees = cr.list();
     * *public Criteria setMaxResults(int max)* -- This method sets the page size, the maximun number of objects to get each time.
 
 * **Sorting the Results** 
-
+The Criteria API provide the *org.hibernate.criterion.Order* class to sort the result set arcording to one of properties of the persistent class. Below is the example of using *Order* to sort:
+    ```
+    Criteria cr = session.createCriteria(Employee.class);
+    
+    // To get records having salary more than 2000
+    cr.add(Restrictions.gt("salary", 2000));
+    
+    // To sort records in descening order
+    crit.addOrder(Order.desc("salary"));
+    
+    // To sort records in ascending order
+    crit.addOrder(Order.asc("salary"));
+    
+    List results = cr.list();
+    ```
 
 #### 2.9 Caching
