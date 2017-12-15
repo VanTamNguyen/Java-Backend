@@ -260,8 +260,7 @@ List<Employee> employees = cr.list();
     * *public Criteria setFirstResult(int first)* -- This method sets the first row in the result set, starting with row 0.
     * *public Criteria setMaxResults(int max)* -- This method sets the page size, the maximun number of objects to get each time.
 
-* **Sorting the Results** 
-The Criteria API provide the *org.hibernate.criterion.Order* class to sort the result set arcording to one of properties of the persistent class. Below is the example of using *Order* to sort:
+* **Sorting the Results** -- The Criteria API provide the *org.hibernate.criterion.Order* class to sort the result set arcording to one of properties of the persistent class. Below is the example of using *Order* to sort:
     ```
     Criteria cr = session.createCriteria(Employee.class);
     
@@ -276,5 +275,30 @@ The Criteria API provide the *org.hibernate.criterion.Order* class to sort the r
     
     List results = cr.list();
     ```
+
+* **Projections and Aggregations** -- The Criteria API provide the *org.hibernate.criterion.Projection* which can be used to get average, maximum or minimum of property values. Below is the example of using Projections:
+    ```
+    Criteria cr = session.createCriteria(Employee.class);
+
+    // To get total row count.
+    cr.setProjection(Projections.rowCount());
+
+    // To get average of a property.
+    cr.setProjection(Projections.avg("salary"));
+
+    // To get distinct count of a property.
+    cr.setProjection(Projections.countDistinct("firstName"));
+
+    // To get maximum of a property.
+    cr.setProjection(Projections.max("salary"));
+
+    // To get minimum of a property.
+    cr.setProjection(Projections.min("salary"));
+
+    // To get sum of a property.
+    cr.setProjection(Projections.sum("salary"));
+    ```
+
+
 
 #### 2.9 Caching
