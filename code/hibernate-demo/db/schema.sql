@@ -11,5 +11,6 @@ CREATE TABLE IF NOT EXISTS bank_account(
     account VARCHAR(36) NOT NULL,
     balance INTEGER NOT NULL,
     person_id VARCHAR(36) NOT NULL,
-    FOREIGN KEY (person_id) REFERENCES person(id)
+    FOREIGN KEY (person_id) REFERENCES person(id),
+    CONSTRAINT account_unq UNIQUE(account)
 ) CHARACTER SET utf8;

@@ -13,7 +13,7 @@ public class BankAccount {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
 
-    @Column(name = "account")
+    @Column(name = "account", unique = true)
     private String account;
 
     @Column(name = "balance")
