@@ -20,8 +20,7 @@ public class BankAccount {
     private int balance;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinTable(name = "person_bank_account", joinColumns = {@JoinColumn(name = "bank_account_id")},
-            inverseJoinColumns = {@JoinColumn(name = "person_id")})
+    @JoinColumn(name = "person_id")
     private Person person;
 
     public BankAccount() {

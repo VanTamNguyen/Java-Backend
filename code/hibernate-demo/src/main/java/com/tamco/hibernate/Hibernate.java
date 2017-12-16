@@ -30,12 +30,13 @@ public class Hibernate {
             Person jame = new Person("Jame Bond", 2000);
             BankAccount account1 = new BankAccount("100011", 1000);
             BankAccount account2 = new BankAccount("100012", 1000);
-            jame.add(account1);
-            jame.add(account2);
+
+            session.save(jame);
+            account1.setPerson(jame);
+            account2.setPerson(jame);
 
             session.save(account1);
             session.save(account2);
-            session.save(jame);
 
             transaction.commit();
             System.out.println("Person with bank accounts has been saved!");

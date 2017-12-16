@@ -21,7 +21,7 @@ public class Person {
     private int salary;
     @Column(name = "salary")
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "person")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<BankAccount> bankAccounts;
 
     public Person() {
