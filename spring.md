@@ -21,7 +21,13 @@ Spring is the most popular application development framework for enterprise Java
 #### 2.4 Others
 
 ### 3. IoC Container
+Spring container is at the core of the framework. The container will create the objects, wire them together, configure them and manage their complete life cycle from creation til destruction. The Spring container uses DI to manage the components that make up the application. These objects are called Spring Beans.<br/>
 
+The Spring container gets its instructions on what objects to instantiate, configure and assemble by reading the configuration metadata provided. The configuration metadata can be presented either by XML, annotations or Java code. The Spring container makes use of POJO objects and configuration metadata to produce a fully configured and executable system or application.<br/>
+
+Spring provides two distinct types of container:
+* **BeanFactory Container**
+* **ApplicationContext Container**
 
 
 ### 4. Bean Definition
