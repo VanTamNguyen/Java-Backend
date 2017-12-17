@@ -8,7 +8,17 @@ Spring is the most popular application development framework for enterprise Java
 
 
 ### 2. Spring Architecture
+#### 2.1 Core Container
+* **Core** provides the fundamental parts of the framework including the IoC and Dependency Injection features.
+* **Bean** provides the BeanFactory which is a sophisticated implementation of the factory pattern.
+* **Context** is a medium to access any objects defined and configured. The ApplicationContext is the focal point of the Context module.
+* **SpEL** provides a powerful expression language for querying and manipulating an object graph at runtime.
 
+#### 2.2 Data Access/Integration
+
+#### 2.3 Web
+
+#### 2.4 Others
 
 ### 3. IoC Container
 
