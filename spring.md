@@ -66,39 +66,43 @@ When defining a bean we have an option to specify the scope of that bean. For ex
 | global-session | New instance for a global HTTP session. Only valid in the context of a web-aware Spring ApplicationContext |
 
 ### 6. Bean Life Cycles
+There are many activities that take place between the time of bean initialization and its destruction. But two most important life cycles are initialization and destruction.
+* **Initialization callback** -- The *org.springframework.beans.factory.InitializingBean* interface specifies a single method ```void afterPropertiesSet() throws Exception;```
+* **Destruction callback** -- The *org.springframework.beans.factory.DisposableBean* interface specifies a single method ```void destroy() throws Exception;```
 
 
-### 9. Bean Post Processor
-
-
-### 10. Dependency Injection
-
-
-
-### 11. Injecting Inner Bean
+### 7. Bean Post Processor
 
 
 
-### 12. Injecting Collection
+### 8. Dependency Injection
 
 
 
-### 13. Bean Auto-Wiring
+### 9. Injecting Inner Bean
 
 
 
-### 14. Annotation Based Configuration
-
-
-### 15. Java Based Configuration
-
-
-### 16. Event Handling
+### 10. Injecting Collection
 
 
 
-### 17. Custom Event
+### 11. Bean Auto-Wiring
 
 
 
-### 18. AOP with Spring 
+### 12. Annotation Based Configuration
+
+
+### 13. Java Based Configuration
+
+
+### 14. Event Handling
+
+
+
+### 15. Custom Event
+
+
+
+### 16. AOP with Spring 
