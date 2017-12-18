@@ -21,9 +21,9 @@ Spring is the most popular application development framework for enterprise Java
 #### 2.4 Others
 
 ### 3. IoC Container
-Spring container is at the core of the framework. The container will create the objects, wire them together, configure them and manage their complete life cycle from creation til destruction. The Spring container uses DI to manage the components that make up the application. These objects are called Spring Beans.<br/>
+Spring Container is at the core of the framework. The container will create the objects, wire them together, configure them and manage their complete life cycle from creation til destruction. The Spring container uses DI to manage the components that make up the application. These objects are called Spring Beans.<br/>
 
-The Spring container gets its instructions on what objects to instantiate, configure and assemble by reading the configuration metadata provided. The configuration metadata can be presented either by XML, annotations or Java code. The Spring container makes use of POJO objects and configuration metadata to produce a fully configured and executable system or application.<br/>
+The Spring container gets its instructions on what objects to instantiate, configure and assemble by reading the configuration metadata provided. The configuration metadata can be presented either by XML, annotations or Java code. The Spring Container makes use of POJO objects and configuration metadata to produce a fully configured and executable system or application.<br/>
 
 Spring provides two distinct types of container:
 * **BeanFactory Container**
@@ -55,8 +55,14 @@ There are 3 ways to provide the Spring Container the configuration metadata:
 * Java code
 
 ### 5. Bean Scopes
-
-
+When defining a bean we have an option to specify the scope of that bean. For example, to force the Spring Container to create a new bean instance each time one is needed we should declare the bean's scope is **prototype**. Or if we want the Spring Container return the same bean instance each time one is needed we should declare the bean's scope is **singleton**. Srping supports 5 following scopes.
+| Scope | Description |
+| --- | ---- |
+| singleton | Single instance per Container (default scope) |
+| prototype | Any number of object instances |
+| request | New instance for each HTTP request. Only valid in the context of a web-aware Spring ApplicationContext |
+| session | New instance for each HTTP session. Only valid in the context of a web-aware Spring ApplicationContext |
+| global-session | New instance for a global HTTP session. Only valid in the context of a web-aware Spring ApplicationContext |
 
 ### 6. Bean Life Cycles
 
