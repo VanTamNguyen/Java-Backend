@@ -56,6 +56,7 @@ There are 3 ways to provide the Spring Container the configuration metadata:
 
 ### 5. Bean Scopes
 When defining a bean we have an option to specify the scope of that bean. For example, to force the Spring Container to create a new bean instance each time one is needed we should declare the bean's scope is **prototype**. Or if we want the Spring Container return the same bean instance each time one is needed we should declare the bean's scope is **singleton**. Srping supports 5 following scopes.
+
 | Scope | Description |
 | --- | ---- |
 | singleton | Single instance per Container (default scope) |
