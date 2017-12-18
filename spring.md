@@ -31,7 +31,7 @@ Spring provides two distinct types of container:
 
 
 ### 4. Bean Definition
-
+The objects that forms the backbone of the application and that are managed by the IoC container are called Spring beans. A bean is an object that is instantiated, assembled and otherwise managed by a Spring IoC container. Beans are created with configuration metadata that we supply to the container. 
 
 
 ### 5. Bean Scopes
