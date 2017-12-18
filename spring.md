@@ -49,7 +49,10 @@ The table below describes all properties that make up a bean definition.
 | initialization method | A callback to be called after all properties on the bean have been set by the container |
 | destruction method | A callback to be called after when the container contains the bean is destroyed |
 
-
+There are 3 ways to provide the Spring Container the configuration metadata:
+* XML based configuration file
+* Java annotations
+* Java code
 
 ### 5. Bean Scopes
 
