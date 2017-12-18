@@ -35,6 +35,19 @@ The objects that forms the backbone of the application and that are managed by t
 * How to create a bean
 * Bean life cycle details
 * Bean's dependencies
+The table below describes all properties that make up a bean definition.
+
+| Properties | Description |
+| ----- | ----- |
+| class | This attribute is mandatory and specifies the bean class to be used to create a bean |
+| name | This attribute specifies the bean identifier uniquely |
+| scope | This attribute specifies the bean object |
+| constructor-arg | This is used to inject the dependencies |
+| properties | This is used to inject the dependency |
+| autowiring mode | This is used to inject the dependencies |
+| lazy-initialization mode | This tells the IoC container to create a bean instance at the first time it's requested |
+| initialization method | A callback to be called after all properties on the bean have been set by the container |
+| destruction method | A callback to be called after when the container contains the bean is destroyed |
 
 
 
