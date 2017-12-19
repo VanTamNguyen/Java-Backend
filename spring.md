@@ -71,38 +71,37 @@ There are many activities that take place between the time of bean initializatio
 * **Destruction callback** -- The *org.springframework.beans.factory.DisposableBean* interface specifies a single method ```void destroy() throws Exception;```
 
 
-### 7. Bean Post Processor
+### 7. Dependency Injection
+| DI Type | Description |
+| --- | ---- |
+| Constructor-Based DI | Constructor-Based DI is accomplished when the container invokes a class constructor with a number of arguments, each representing a dependency on the other class |
+| Setter-Based DI | Setter-Based DI is accomplished by the container calling the setter methods on your bean after invoking no-argument constructor or no-argument static factory method to instantiate the bean |
+
+
+### 8. Injecting Inner Bean
 
 
 
-### 8. Dependency Injection
+### 9. Injecting Collection
 
 
 
-### 9. Injecting Inner Bean
+### 10. Bean Auto-Wiring
 
 
 
-### 10. Injecting Collection
+### 11. Annotation Based Configuration
+
+
+### 12. Java Based Configuration
+
+
+### 13. Event Handling
 
 
 
-### 11. Bean Auto-Wiring
+### 14. Custom Event
 
 
 
-### 12. Annotation Based Configuration
-
-
-### 13. Java Based Configuration
-
-
-### 14. Event Handling
-
-
-
-### 15. Custom Event
-
-
-
-### 16. AOP with Spring 
+### 15. AOP with Spring 
