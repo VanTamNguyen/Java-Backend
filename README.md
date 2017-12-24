@@ -9,14 +9,12 @@ Things I learn to become a Java backend engineer
 
 ### [Security](security.md)
 
-### [Unit and Integration Test](test.md)
-
 ### [Frameworks](https://en.wikipedia.org/wiki/Spring_Framework)
 * [Spring](spring.md)
 * [Spring Boot](spring_boot.md)
 
-### [Build tools](https://en.wikipedia.org/wiki/Apache_Maven)
-* [Maven](maven.md)
-* [Gradle](gradle.md)
+### [Unit and Integration Test](test.md)
+
+### [Maven](maven.md)
 
 ### [Logging](logging.md)
