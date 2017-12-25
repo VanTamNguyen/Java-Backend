@@ -15,10 +15,26 @@ Spring is the most popular application development framework for enterprise Java
 * **SpEL** provides a powerful expression language for querying and manipulating an object graph at runtime.
 
 #### 2.2 Data Access/Integration
+* **JDBC** provides JDBC-abstraction layer to remove tedious JDBC related coding.
+* **ORM** provides integration layers for popular object-relational mapping APIs like JPA, Hibernate, iBatis.
+* **OXM** provides an abstraction layer for Object/XML Mapping.
+* **JMS (Java Messaging Service)** provides features for producing and consuming messages. 
+* **Transaction** supports programmatic and declarative transaction management for classes that implement special interfaces and for all your POJOs.
 
 #### 2.3 Web
+* **Web** provides basic web-oriented integration features such as multipart file uploading and the initialization of IoC container using Servlet listener and a web-oriented application context. 
+* **Web-MVC** contains Spring's Model-View-Controller implementation for web applications.
+* **Web-Socket** supports Websocket-based two way communication between client and server in a web application.
+* **Web-Portlet** provides MVC implementation in Portlet environment.
+
 
 #### 2.4 Others
+* **AOP** provides aspect oriented programming implementation.
+* **Aspects** provides integration with AspectJ which is a powerful and mature AOP framework.
+* **Messaging** 
+* **Instrumentation**
+* **Test**
+
 
 ### 3. IoC Container
 Spring Container is at the core of the framework. The container will create the objects, wire them together, configure them and manage their complete life cycle from creation til destruction. The Spring container uses DI to manage the components that make up the application. These objects are called Spring Beans.<br/>
