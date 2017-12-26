@@ -202,6 +202,26 @@ public class AppConfig {
 ```
 
 #### Life Cycle Callbacks
+The @Bean annotation supports specifying the initialization and desctruction callback methods.
+```
+public class Foo {
+   public void init() {
+      // initialization logic
+   }
+   public void cleanup() {
+      // destruction logic
+   }
+}
+@Configuration
+public class AppConfig {
+   @Bean(initMethod = "init", destroyMethod = "cleanup" )
+   public Foo foo() {
+      return new Foo();
+   }
+}
+```
+
+
 
 
 ### 13. Event Handling
