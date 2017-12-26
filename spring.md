@@ -234,12 +234,4 @@ public class AppConfig {
 ```
 
 
-### 13. Event Handling
-
-
-
-### 14. Custom Event
-
-
-
 ### 15. AOP with Spring 
