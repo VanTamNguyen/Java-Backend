@@ -140,6 +140,32 @@ Following are the modes of autowiring which can be used to instruct the Spring c
 | autodectect | Spring first tries to wire autowire by constructor, if it does not work, Spring tries to use autowire by byType. |
 
 ### 11. Annotation Based Configuration
+Starting from Spring 2.5, it's possible to config dependency injection by using annotations. Annotations injection will be performed before XML. Thus, the latter configuration will overwrite the former one.<br/>
+
+Annotation wiring is the the default. So, to use the annotation wiring we need to turn it on in Spring configuration file as follow.
+```
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+   <context:annotation-config/>
+   <!-- bean definitions go here -->
+
+</beans>
+```
+
+Following are some of the most important annotations.
+| Annotation | Description |
+| --- | ------ |
+| **@Required** | This annotation applies to bean property setter methods. |
+| **@Autowired** | This annotation applies to bean property setter methods, non-setter methods, constructors and properties. |
+| **Qualifier** | This annotation is used along with @Autowire to remove confusion by specifying which exact bean can be wired. |
 
 
 ### 12. Java Based Configuration
