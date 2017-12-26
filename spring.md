@@ -4,7 +4,7 @@
 ### 1. Overview
 Spring is the most popular application development framework for enterprise Java. Spring targets to make J2EE development easier and promotes good programming practices by enable a POJO-based programming model. The core features of Spring framework:
 * **Dependency Injection (DI)** -- The technology that Spring is identified with is Dependency Injection flavor of Inversion of Control. Inversion of Control (IoC) is the general concept and Dependency Injection is merely one concrete example of Inversion of Control. What is Dependency Injection exactly? Let's look at two words separately. *Dependency* is the association between two classes. For example, class A is dependent of class B. Now look at the second part *injection*. All this means is, class B will be injected to class A by the IoC.
-* **Aspect Oriented Programming (AOP)** -- The common functions that span multiple points in a application are called **cross-cutting concerns**. These cross-cutting concerns are separate from the application's business logic. There are various good examples of aspects including logging, security, caching, etc. The key unit of modularity in OOP is class, whereas in AOP the key unit of modularity is aspect. DI helps to decouple application objects from each other, while AOP helps to decouple cross-cutiing concerns from the object they affect.
+* **Aspect Oriented Programming (AOP)** -- The common functions that span multiple points in an application are called **cross-cutting concerns**. These cross-cutting concerns are separate from the application's business logic. There are various good examples of aspects including logging, security, caching, etc. The key unit of modularity in OOP is class, whereas in AOP the key unit of modularity is aspect. DI helps to decouple application objects from each other, while AOP helps to decouple cross-cutiing concerns from the object they affect.
 
 
 ### 2. Spring Architecture
@@ -95,6 +95,23 @@ There are many activities that take place between the time of bean initializatio
 
 
 ### 8. Injecting Inner Bean
+**Inner beans** are the beans that are defined within the scope of other beans. Thus, the <bean/> element insides the <property/> or <constructor-arg> element is called an inner bean like the declaration below:
+```
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "outerBean" class = "...">
+      <property name = "target">
+         <bean class = "..."/>
+      </property>
+   </bean>
+
+</beans>
+```
 
 
 
