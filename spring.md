@@ -170,8 +170,36 @@ Following are some of the most important annotations.
 
 ### 12. Java Based Configuration
 #### @Configuration and @Bean Annotations
+Annotating a class with **@Configuration** indicates that the Spring container can use that class as a source of bean definitions. The **@Bean** annotation tell Spring that a method annotated with @Bean will return an object that should be registered as a bean in the Spring application context. The example as follow.
+
+```
+import org.springframework.context.annotation.*;
+
+@Configuration
+public class HelloWorldConfig {
+   @Bean 
+   public HelloWorld helloWorld(){
+      return new HelloWorld();
+   }
+}
+```
 
 #### Injecting Bean Dependencies
+```
+import org.springframework.context.annotation.*;
+
+@Configuration
+public class AppConfig {
+   @Bean
+   public Foo foo() {
+      return new Foo(bar());
+   }
+   @Bean
+   public Bar bar() {
+      return new Bar();
+   }
+}
+```
 
 #### Life Cycle Callbacks
 
