@@ -127,8 +127,17 @@ Spring offer 4 types of collection configuration elements which are follows.
 
 
 ### 10. Bean Auto-Wiring
+Spring container can autowire the relationships between the collaborating beans without using <constructor-arg> and <property> elements, which helps cut down the amount of XML configuration.<br/>
 
+Following are the modes of autowiring which can be used to instruct the Spring container to use autowiring for dependency injection. We use the *autowire* attribute of the <bean/> element to specify autowire mode for bean definition.
 
+| Mode | Description |
+| ------ | --------- |
+| no | This is the default setting which mean no autowiring and you have to use explicit bean reference for wiring. |
+| byName | Autowiring by propertiy name. Spring container looks at the properties of the bean and it tries to match and wire its properties with beans defined by the same names in configuration file. |
+| byType | Autowiring by property datatype. The Spring container looks at the properites of the beans and it tries to match and wire its properties with beans has exactly same type defined in configuration file. If more than one such beans exists, a fatal exception will be thrown. |
+| constructor | Similar to byType. But type applies to constructor arguments. |
+| autodectect | Spring first tries to wire autowire by constructor, if it does not work, Spring tries to use autowire by byType. |
 
 ### 11. Annotation Based Configuration
 
