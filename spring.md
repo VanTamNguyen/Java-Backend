@@ -116,7 +116,14 @@ An inner bean does not require an id or a name; if specified the container does 
 
 
 ### 9. Injecting Collection
+Spring offer 4 types of collection configuration elements which are follows.
 
+| Collection element | Description |
+| -------- | ------ |
+| **<list>** | This helps in injecting a list of values, allowing duplicates |
+| **<set>** | This helps in injecting a set of values, not allowing duplicate |
+| **<map>** | This helps in injecting collection of key-value pairs which can be any type |
+| **props** | This helps in injecting collection of key-value pairs which both key and value are String |
 
 
 ### 10. Bean Auto-Wiring
