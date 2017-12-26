@@ -169,6 +169,11 @@ Following are some of the most important annotations.
 
 
 ### 12. Java Based Configuration
+#### @Configuration and @Bean Annotations
+
+#### Injecting Bean Dependencies
+
+#### Life Cycle Callbacks
 
 
 ### 13. Event Handling
