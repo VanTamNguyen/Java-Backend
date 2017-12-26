@@ -31,9 +31,9 @@ Spring is the most popular application development framework for enterprise Java
 #### 2.4 Others
 * **AOP** provides aspect oriented programming implementation.
 * **Aspects** provides integration with AspectJ which is a powerful and mature AOP framework.
-* **Messaging** 
-* **Instrumentation**
-* **Test**
+* **Messaging** module provides support for STOMP as the WebSocket sub-protocol to use in applications. It also supports an annotation programming model for routing and processing STOMP messages from WebSocket clients.
+* **Instrumentation** module provides class instrumentation support and class loader implementations to be used in certain application servers.
+* **Test** module supports the testing of Spring components with JUnit or TestNG frameworks.
 
 
 ### 3. IoC Container
