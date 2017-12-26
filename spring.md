@@ -120,9 +120,9 @@ Spring offer 4 types of collection configuration elements which are follows.
 
 | Collection element | Description |
 | -------- | ------ |
-| <list> | This helps in injecting a list of values, allowing duplicates |
-| <set> | This helps in injecting a set of values, not allowing duplicate |
-| <map> | This helps in injecting collection of key-value pairs which can be any type |
+| list | This helps in injecting a list of values, allowing duplicates |
+| set | This helps in injecting a set of values, not allowing duplicate |
+| map | This helps in injecting collection of key-value pairs which can be any type |
 | props | This helps in injecting collection of key-value pairs which both key and value are String |
 
 
