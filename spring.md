@@ -221,7 +221,17 @@ public class AppConfig {
 }
 ```
 
-
+#### Specifying Bean Scope
+```
+Configuration
+public class AppConfig {
+   @Bean
+   @Scope("prototype")
+   public Foo foo() {
+      return new Foo();
+   }
+}
+```
 
 
 ### 13. Event Handling
