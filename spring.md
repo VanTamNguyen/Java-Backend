@@ -112,7 +112,7 @@ There are many activities that take place between the time of bean initializatio
 
 </beans>
 ```
-
+An inner bean does not require an id or a name; if specified the container does not use such a value as an idenitifier. Inner beans are always anonymous and they are always created with outer bean. It's impossible to inject inner bean into collaborating beans to access them independently.
 
 
 ### 9. Injecting Collection
