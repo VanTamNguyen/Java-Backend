@@ -161,6 +161,7 @@ Annotation wiring is the the default. So, to use the annotation wiring we need t
 ```
 
 Following are some of the most important annotations.
+
 | Annotation | Description |
 | --- | ------ |
 | **@Required** | This annotation applies to bean property setter methods. |
