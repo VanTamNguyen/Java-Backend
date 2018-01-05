@@ -6,6 +6,7 @@ import org.springframework.web.servlet.mvc.Controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Date;
 
 /**
  * Created by tamnv on 1/5/18.
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 public class HelloController implements Controller {
 
     public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
-        return new ModelAndView("hello.jsp");
+        Date now = new Date();
+        return new ModelAndView("hello.jsp", "now", now);
     }
 }
